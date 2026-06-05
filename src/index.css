@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  /* Modern Luxury Royal Coffee Color Palette */
+  --color-gold-prime: #dfb56c;
+  --color-gold-dark: #af833b;
+  --color-gold-light: #fbe9c8;
+  --color-brand-bg: #111111;
+  --color-brand-card: #181818;
+  --color-brand-border: #2c2c2c;
+}
+
+/* Custom radial gradient background for luxury focus */
+.bg-radial-gradient-dark {
+  background: radial-gradient(circle at center, rgba(30, 24, 18, 0.15) 0%, rgba(17, 17, 17, 0.99) 100%);
+}
+
+/* Premium Glow effects */
+.glow-gold {
+  box-shadow: 0 0 30px rgba(223, 181, 108, 0.12);
+}
+
+.glow-gold-hover:hover {
+  box-shadow: 0 0 35px rgba(223, 181, 108, 0.2);
+}
+
+/* Custom animation keyframes */
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.95;
+    transform: scale(1.02);
+  }
+  50% {
+    opacity: 0.85;
+    transform: scale(1.045);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 16s ease-in-out infinite;
+}
+
+/* Base body customization and smooth behaviors */
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF7F2;
+}
+
+body {
+  background-color: #FAF7F2;
+  color: #1C1C1C;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom premium elements for luxury focus */
+.bg-cream-canvas {
+  background-color: #FAF7F2;
+}
+
+.text-gold-accent {
+  color: #B89020;
+}
+
+.border-gold-accent {
+  border-color: rgba(184, 144, 32, 0.2);
+}
+
+.bg-luxury-card {
+  background-color: #FFFFFF;
+}
+
+/* Premium Glow and Glassmorphism effects */
+.glow-gold {
+  box-shadow: 0 10px 40px rgba(184, 144, 32, 0.05);
+}
+
+.glow-gold-hover:hover {
+  box-shadow: 0 15px 45px rgba(184, 144, 32, 0.12);
+  border-color: rgba(184, 144, 32, 0.4);
+}
+
+/* Custom transitions and premium lift */
+.hover-premium-lift {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-premium-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(184, 144, 32, 0.08);
+  border-color: rgba(184, 144, 32, 0.35);
+}
+
+/* Elegant scroll bars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E5DEC9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B89020;
+}
+
+

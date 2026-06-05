@@ -1,0 +1,6 @@
+{
+  "name": "Café MM - Benslimane",
+  "description": "الموقع الرسمي الراقي لـ Café MM بنسليمان. الموقع يعرض قائمة المأكولات، الحجوزات السريعة، وأحدث العروض مع واجهة فرنسية وعربية.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
