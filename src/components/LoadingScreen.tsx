@@ -35,7 +35,7 @@ export default function LoadingScreen() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="font-serif text-3xl sm:text-4xl tracking-widest text-[#1C1C1C] font-semibold"
           >
-            M&M LUXURY
+            CAFÉ LUXE
           </motion.h1>
           
           <motion.p 

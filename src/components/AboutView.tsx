@@ -47,7 +47,7 @@ export default function AboutView({ language }: AboutViewProps) {
             <img 
               src={IMAGES.interior} 
               alt="Heritage Interior" 
-              className="w-full h-full object-cover grayscale brightness-95 hover:grayscale-0 transition-transform duration-1000"
+              className="w-full h-full object-cover brightness-[0.98] hover:brightness-[1.04] hover:scale-105 transition-all duration-[1000ms]"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-white/30 via-transparent to-transparent pointer-events-none" />

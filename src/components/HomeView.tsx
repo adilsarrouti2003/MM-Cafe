@@ -49,22 +49,16 @@ export default function HomeView({ language, onPageChange, onAdminOpen }: HomeVi
   return (
     <div className="space-y-0 text-[#1C1C1C] animate-fade-in bg-[#FAF7F2]">
       
-      {/* 1. HERO SECTION WITH CINEMATIC VIDEO */}
+      {/* 1. HERO SECTION WITH REAL PREMIUM CAFE EMBLEMATIC IMAGE */}
       <section className="relative h-screen min-h-screen w-full flex items-center justify-center bg-black overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover scale-[1.01] filter brightness-[0.35] contrast-[1.05]"
-          >
-            <source 
-              src="https://player.vimeo.com/external/435674703.sd.mp4?s=7fdf186259021175628b067f9757367e9f3b60f2&profile_id=165&oauth2_token_id=57447761" 
-              type="video/mp4" 
-            />
-          </video>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#FAF7F2] via-transparent to-black/60 z-10 pointer-events-none" />
+        <div className="absolute inset-0 z-0 select-none">
+          <img
+            src={IMAGES.luxeInterior}
+            alt="Luxury Cafe Interior Premium View"
+            className="w-full h-full object-cover scale-[1.02] filter brightness-[0.52] contrast-[1.03] transition-transform duration-1000"
+            referrerPolicy="no-referrer"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#FAF7F2] via-black/30 to-black/75 z-10 pointer-events-none" />
         </div>
 
         <div className="relative z-20 max-w-5xl mx-auto px-4 text-center mt-12">
@@ -293,15 +287,15 @@ export default function HomeView({ language, onPageChange, onAdminOpen }: HomeVi
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             <div className="aspect-[16/10] overflow-hidden border border-[#B89020]/15 rounded-2xl relative group cursor-pointer shadow-lg" onClick={() => onPageChange('gallery')}>
-              <img src={IMAGES.interior} className="w-full h-full object-cover grayscale brightness-95 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-[1000ms]" referrerPolicy="no-referrer" />
+              <img src={IMAGES.interior} className="w-full h-full object-cover brightness-[0.98] group-hover:scale-105 group-hover:brightness-105 transition-all duration-[1000ms]" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-500" />
             </div>
             <div className="aspect-[16/10] overflow-hidden border border-[#B89020]/15 rounded-2xl relative group cursor-pointer shadow-lg" onClick={() => onPageChange('gallery')}>
-              <img src={IMAGES.breakfast} className="w-full h-full object-cover grayscale brightness-95 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-[1000ms]" referrerPolicy="no-referrer" />
+              <img src={IMAGES.breakfast} className="w-full h-full object-cover brightness-[0.98] group-hover:scale-105 group-hover:brightness-105 transition-all duration-[1000ms]" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-500" />
             </div>
             <div className="aspect-[16/10] overflow-hidden border border-[#B89020]/15 rounded-2xl relative group cursor-pointer shadow-lg" onClick={() => onPageChange('gallery')}>
-              <img src={IMAGES.windowView} className="w-full h-full object-cover grayscale brightness-95 group-hover:grayscale-0 group-hover:brightness-100 transition-all duration-[1000ms]" referrerPolicy="no-referrer" />
+              <img src={IMAGES.windowView} className="w-full h-full object-cover brightness-[0.98] group-hover:scale-105 group-hover:brightness-105 transition-all duration-[1000ms]" referrerPolicy="no-referrer" />
               <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-all duration-500" />
             </div>
           </div>
@@ -399,7 +393,7 @@ export default function HomeView({ language, onPageChange, onAdminOpen }: HomeVi
               
               <button 
                 onClick={() => {
-                  window.open(`https://wa.me/212661430040?text=${encodeURIComponent(isRtl ? 'مرحباً، أريد حجز طاولة خاصة في مقهى M&M Luxury ببنسليمان' : 'Hello, I want to reserve a private table at M&M Luxury Benslimane')}`);
+                  window.open(`https://wa.me/212661430040?text=${encodeURIComponent(isRtl ? 'مرحباً، أريد حجز طاولة خاصة في المقهى الفاخر ببنسليمان' : 'Hello, I want to reserve a private table at the Luxury Cafe Benslimane')}`);
                 }}
                 className="px-10 py-5 bg-transparent hover:bg-white/5 text-white/90 hover:text-white border border-white/20 hover:border-[#D4AF37] font-mono text-xs uppercase tracking-[0.2em] transition-all cursor-pointer rounded-none"
               >

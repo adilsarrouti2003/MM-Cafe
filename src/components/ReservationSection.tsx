@@ -37,7 +37,7 @@ export default function ReservationSection({ language, onNewReservation, scriptU
       descAr: 'جلسات خارجية مبهجة تحت أشعة الشمس ونسمات الهواء العليل.',
       descFr: 'Outdoor dining with crisp fresh air and warm Moroccan sunshine.',
       icon: Compass,
-      image: IMAGES.breakfast
+      image: IMAGES.cozyViewTable
     },
     {
       id: 'family',
@@ -46,7 +46,7 @@ export default function ReservationSection({ language, onNewReservation, scriptU
       descAr: 'خصوصية كاملة وراحة تامة لعائلتك وجلساتكم الحميمة.',
       descFr: 'Ultimate quiet space with comfortable high-chairs and wide tables.',
       icon: Users,
-      image: IMAGES.interior
+      image: IMAGES.upstairs
     },
     {
       id: 'window',
@@ -64,7 +64,7 @@ export default function ReservationSection({ language, onNewReservation, scriptU
       descAr: 'جلسة مخملية بأرقى كراسي الجلد الطبيعي والخدمة الحصرية.',
       descFr: 'Premium leather couches, secluded atmosphere and high priority service.',
       icon: Armchair,
-      image: IMAGES.interior
+      image: IMAGES.loungeGreen
     }
   ];
 
@@ -284,7 +284,7 @@ export default function ReservationSection({ language, onNewReservation, scriptU
                       <img 
                         src={opt.image} 
                         alt={opt.id} 
-                        className="absolute inset-0 w-full h-full object-cover opacity-15 filter grayscale group-hover:opacity-30 transition-opacity duration-700"
+                        className="absolute inset-0 w-full h-full object-cover opacity-[0.22] group-hover:opacity-45 brightness-95 group-hover:brightness-105 group-hover:scale-105 transition-all duration-700"
                         referrerPolicy="no-referrer"
                       />
 

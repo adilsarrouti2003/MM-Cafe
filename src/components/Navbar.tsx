@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Coffee, Languages, Phone, CalendarRange } from 'lucide-react';
-import { Language, DICTIONARY } from '../data';
+import { Language, DICTIONARY, IMAGES } from '../data';
 
 interface NavbarProps {
   language: Language;
@@ -67,7 +67,7 @@ export default function Navbar({ language, setLanguage, activeSection, setActive
           >
             <div className="relative w-12 h-12 rounded-full overflow-hidden bg-[#FAF7F2] border border-[#B89020]/30 shadow-[0_0_15px_rgba(223,181,108,0.25)] transition-all duration-300 group-hover:scale-105 shrink-0">
               <img 
-                src="/input_file_2.png" 
+                src={IMAGES.logo} 
                 alt="Café Logo" 
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
