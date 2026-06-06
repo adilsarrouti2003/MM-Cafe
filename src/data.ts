@@ -5,13 +5,16 @@ import cafeInteriorBg from './assets/images/cafe_luxe_interior_1780661147103.png
 export type { Language };
 
 export const IMAGES = {
-  interior: cafeInteriorBg,
-  breakfast: '/input_file_0.png',
-  coffee: '/input_file_0.png',
-  milkshakes: '/input_file_0.png',
-  windowView: '/input_file_1.png',
-  waffle: '/input_file_0.png',
-  crepe: '/input_file_0.png',
+  interior: '/input_file_0.png',
+  upstairs: '/input_file_1.png',
+  exterior: '/input_file_2.png',
+  breakfast: '/input_file_3.png',
+  coffee: '/input_file_4.png',
+  milkshakes: '/input_file_4.png',
+  windowView: '/input_file_6.png',
+  waffle: '/input_file_4.png',
+  crepe: '/input_file_3.png',
+  facade: '/input_file_5.png',
 };
 
 export const MENU_ITEMS: MenuItem[] = [

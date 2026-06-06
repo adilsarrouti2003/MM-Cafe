@@ -20,30 +20,51 @@ export default function GalleryView({ language }: GalleryViewProps) {
   const photos = [
     {
       url: IMAGES.interior,
-      tag: isRtl ? 'الصالون الداخلي الدافئ والراقي' : 'Elegant Velvet Lounge',
-      descAr: 'صالونات وثير الكراسي بأعلى جودة مع إضاءة خافتة للاسترخاء.',
-      descFr: 'Premium velvet chairs combined with low-whisper lounge spaces.',
+      tag: isRtl ? 'الصالون المخملي والداخلي الدافئ' : 'Elegant Velvet Garden Lounge',
+      descAr: 'صالونات مجهزة بوثير الكراسي بأعلى جودة مع إضاءة خافتة وديكور مستوحى من الطبيعة للاسترخاء.',
+      descFr: 'Premium green velvet lounge chairs paired with calming natural decors under soft ceilings.',
       size: 'col-span-1 md:col-span-2'
     },
     {
+      url: IMAGES.upstairs,
+      tag: isRtl ? 'الطابق العلوي والأعمدة اللامعة' : 'Upstairs Seating Deck',
+      descAr: 'المقاعد المريحة في الطابق العلوي مع السلم المضاء بمصابيح Led والأعمدة الذهبية الفاخرة.',
+      descFr: 'Spacious second floor containing premium comfortable armchairs and gorgeous glowing columns.',
+      size: 'col-span-1'
+    },
+    {
+      url: IMAGES.exterior,
+      tag: isRtl ? 'واجهة المقهى البديعة في الليل' : 'Double-Floor Night Glow',
+      descAr: 'أضواء ذهبية لافتة تنير طابقي المقهى في شمس المدينة بنسليمان.',
+      descFr: 'Our spectacular double-decker external facade glowing proudly under the Benslimane night sky.',
+      size: 'col-span-1'
+    },
+    {
       url: IMAGES.breakfast,
-      tag: isRtl ? 'الفطور المغربي الأصيل البهيج' : 'Petit-Déjeuner Beldi',
-      descAr: 'أطباق بلدية طازجة تحضر وتزين بشغف لإسعاد صباحاتكم.',
-      descFr: 'Hearty traditional plateaux with fresh tea and organic olives.',
+      tag: isRtl ? 'فطور المسمن البلدي الأصيل' : 'Authentic Msemmen Plate',
+      descAr: 'مسمن مغربي ساخن ومورق يقدم مع العسل والجبن وقنينة ماء منعشة لشحن طاقتكم.',
+      descFr: 'Crispy warm Moroccan puff pastry served with condiments and chilled spring water.',
+      size: 'col-span-1 md:col-span-2'
+    },
+    {
+      url: IMAGES.coffee,
+      tag: isRtl ? 'الميلك شيك والقهوة المثلجة اللذيذة' : 'Artistic Whipped Cappuccino',
+      descAr: 'كوب قهوتنا الغني المزركش بالكريمة الطازجة المخفوقة وسكوب الكاكاو صوص الشوكولا.',
+      descFr: 'Indulgent espresso double shot topped with rich whipped cream swirl and dark chocolate drizzle.',
+      size: 'col-span-1'
+    },
+    {
+      url: IMAGES.facade,
+      tag: isRtl ? 'تفاصيل المخبزة والحلويات الراقية' : 'The Sweet Treat Boutique',
+      descAr: 'واجهة صالون الشاي والحلويات "Patisserie MM" الراقية لاستقبال زوارنا ليلاً ونهاراً.',
+      descFr: 'Authentic display and beautiful seating arrangements outside our premium pastry store.',
       size: 'col-span-1'
     },
     {
       url: IMAGES.windowView,
-      tag: isRtl ? 'إطلالة النوافذ الزجاجية الكبيرة' : 'Aesthetic Window Lounge',
-      descAr: 'حيث تتدفق خيوط الشمس الذهبية وتنعش جلستكم الدافئة.',
-      descFr: 'Stream of golden morning sunshine alongside heavy glass frames.',
-      size: 'col-span-1'
-    },
-    {
-      url: IMAGES.coffee,
-      tag: isRtl ? 'إعداد الكابتشينو والفطائر' : 'Premium Golden Brews',
-      descAr: 'رغوة إسبريسو غنية مع حبوب البن المحمصة الطازجة.',
-      descFr: 'Artistic espresso extraction with thick, smooth cream topping.',
+      tag: isRtl ? 'ركن الإسبريسو والهدوء المطلق' : 'Minimalist Window Espresso',
+      descAr: 'قهوة ممتازة معدة بإتقان بجانب نبتة البونساي الأنيقة في شقتنا الهادئة كلياً.',
+      descFr: 'Artisanal espresso shot pulled and served elegantly at the window-side table.',
       size: 'col-span-1 md:col-span-2'
     }
   ];
