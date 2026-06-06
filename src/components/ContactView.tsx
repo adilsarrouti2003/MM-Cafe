@@ -9,8 +9,8 @@ export default function ContactView({ language }: ContactViewProps) {
   const isRtl = language === 'ar';
   const d = DICTIONARY[language];
 
-  const mapsUrl = "https://www.google.com/maps/place/Caf%C3%A9+MM/@33.6162892,-7.1309837,15z/data=!4m6!3m5!1s0xda7ab552d1f8d53:0x390f1b4ca2cd932a!8m2!3d33.6162892!4d-7.1309837";
-  const waUrl = `https://wa.me/212661430040?text=${encodeURIComponent(d.whatsappMessage)}`;
+  const mapsUrl = "https://maps.app.goo.gl/7T4JBx2BPd1h5PDK6";
+  const waUrl = `https://wa.me/212638309081?text=${encodeURIComponent(d.whatsappMessage)}`;
 
   return (
     <div className="py-24 sm:py-36 bg-[#FAF7F2] text-[#1C1C1C] relative animate-fade-in">
@@ -41,8 +41,8 @@ export default function ContactView({ language }: ContactViewProps) {
                   <Phone className="w-4 h-4 text-[#B89020]" />
                   <span>{d.footerCall}</span>
                 </div>
-                <a href="tel:+212661430040" className="text-xl text-[#B89020] hover:text-[#1C1C1C] transition-colors font-mono font-bold block">
-                  +212 661 43 00 40
+                <a href="tel:+212638309081" className="text-xl text-[#B89020] hover:text-[#1C1C1C] transition-colors font-mono font-bold block">
+                  +212 638-309081
                 </a>
                 <p className="text-gray-500 text-xs font-light font-sans">
                   {isRtl ? 'اتصال مباشر فوري مع موثق الحجوزات لتأكيد منسق.' : 'Direct voice line to our reservations manager.'}
@@ -58,7 +58,7 @@ export default function ContactView({ language }: ContactViewProps) {
                   {d.footerAddressDetails}
                 </span>
                 <span className="text-gray-500 text-xs font-light block font-sans">
-                  {isRtl ? 'حي شمس المدينة، Benslimane (رمز JV89+MG)' : 'Shams Al Madina development, Benslimane, Morocco.'}
+                  {isRtl ? 'غولف شمس المدينة، بنسليمان 13000 (رمز JV99+48)' : 'Golf chamss lmadina, Ben Slimane 13000 (JV99+48)'}
                 </span>
               </div>
 
@@ -71,7 +71,7 @@ export default function ContactView({ language }: ContactViewProps) {
                   {d.footerEveryday}
                 </span>
                 <span className="text-[#B89020] font-mono text-sm block font-bold">
-                  {isRtl ? 'من 08:00 صباحاً حتى 23:00 مساءً' : 'Daily from 08:00 to 23:00'}
+                  {isRtl ? 'مفتوح يومياً حتى الساعة 23:30 مساءً' : 'Daily until 23:30'}
                 </span>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function ContactView({ language }: ContactViewProps) {
             <div className="w-full h-[320px] sm:h-[450px] overflow-hidden border border-[#B89020]/15 bg-white rounded-2xl shadow-inner">
               <iframe 
                 title="Café Benslimane Map Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.463375373322!2d-7.133172384794273!3d33.61628918072702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7ab552d1f8d53%3A0x390f1b4ca2cd932a!2sCaf%C3%A9%20MM!5e0!3m2!1sfr!2sma!4v1717511200000!5m2!1sfr!2sma" 
+                src="https://www.google.com/maps?q=33.6177692,-7.1316691&z=17&output=embed" 
                 width="100%" 
                 height="100%"
                 style={{ border: 0 }} 
@@ -113,7 +113,7 @@ export default function ContactView({ language }: ContactViewProps) {
             <div className={`mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 ${isRtl ? 'text-right' : 'text-left'}`}>
               <div className="p-4 bg-[#FAF7F2] border border-[#B89020]/15 rounded-xl">
                 <span className="text-[#B89020] text-xs font-bold block mb-1">{isRtl ? 'موقع خرائط Google' : 'GPS Coordinates'}</span>
-                <span className="text-[#1C1C1C] font-mono text-[11px] block font-semibold">33.6162892, -7.1309837</span>
+                <span className="text-[#1C1C1C] font-mono text-[11px] block font-semibold">33.6177692, -7.1316691</span>
                 <a 
                   href={mapsUrl}
                   target="_blank"
@@ -127,7 +127,7 @@ export default function ContactView({ language }: ContactViewProps) {
 
               <div className="p-4 bg-[#FAF7F2] border border-[#B89020]/15 rounded-xl font-sans">
                 <span className="text-[#B89020] text-xs font-bold block mb-1">{isRtl ? 'دليل نفقات المقهى' : 'Pricing & Standard Tier'}</span>
-                <span className="text-[11px] block font-bold text-[#1C1C1C]">15 – 50 MAD {isRtl ? 'للفرد' : 'per individual'}</span>
+                <span className="text-[11px] block font-bold text-[#1C1C1C]">1 – 50 MAD {isRtl ? 'للفرد' : 'per individual'}</span>
                 <span className="text-gray-500 text-[10px] block mt-1 leading-normal font-light">{isRtl ? 'وجبات فاخرة ومشروبات بأسعار تنافسية جد ميسرة كلياً' : 'Premium luxury accessible for everyone'}</span>
               </div>
             </div>

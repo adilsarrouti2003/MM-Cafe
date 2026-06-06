@@ -149,10 +149,10 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF7F2] text-[#1C1C1C] font-sans relative antialiased selection:bg-[#B89020]/20 selection:text-black">
+    <div className="min-h-screen bg-[#F5F5DC] text-[#1B4332] font-sans relative antialiased selection:bg-[#1B4332]/25 selection:text-white">
       
       {/* Background radial atmosphere lightings */}
-      <div className="absolute top-0 left-0 right-0 h-[800px] bg-gradient-to-b from-[#B89020]/5 via-transparent to-transparent pointer-events-none -z-10" />
+      <div className="absolute top-0 left-0 right-0 h-[800px] bg-gradient-to-b from-[#1B4332]/10 via-transparent to-transparent pointer-events-none -z-10" />
 
       {/* Navigation Header bar */}
       <Navbar 

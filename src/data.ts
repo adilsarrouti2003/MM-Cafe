@@ -1,281 +1,102 @@
 import { MenuItem, Review, Language } from './types';
 
-// @ts-ignore
-import cafeInteriorBg from './assets/images/cafe_luxe_interior_1780661147103.png';
-// @ts-ignore
-import logoImg from './assets/images/image_9ae03f.png';
-// @ts-ignore
+// Import real local images
+import logoImg from './assets/images/dream_coffee_logo_official_1780763561713.png';
 import unnamedImg from './assets/images/unnamed.jpg';
-// @ts-ignore
-import unnamed1 from './assets/images/unnamed (1).jpg';
-// @ts-ignore
-import unnamed2 from './assets/images/unnamed (2).jpg';
-// @ts-ignore
-import unnamed3 from './assets/images/unnamed (3).jpg';
-// @ts-ignore
-import unnamed4 from './assets/images/unnamed (4).jpg';
-// @ts-ignore
-import unnamed5 from './assets/images/unnamed (5).jpg';
-// @ts-ignore
-import unnamed6 from './assets/images/unnamed (6).jpg';
-// @ts-ignore
-import unnamed7 from './assets/images/unnamed (7).jpg';
-// @ts-ignore
-import unnamed8 from './assets/images/unnamed (8).jpg';
-// @ts-ignore
-import unnamed9 from './assets/images/unnamed (9).jpg';
-// @ts-ignore
-import unnamed10 from './assets/images/unnamed (10).jpg';
-// @ts-ignore
-import unnamed11 from './assets/images/unnamed (11).jpg';
-// @ts-ignore
-import unnamed12 from './assets/images/unnamed (12).jpg';
-// @ts-ignore
-import unnamed13 from './assets/images/unnamed (13).jpg';
-// @ts-ignore
-import unnamed14 from './assets/images/unnamed (14).jpg';
-// @ts-ignore
-import unnamed15 from './assets/images/unnamed (15).jpg';
-// @ts-ignore
-import unnamed16 from './assets/images/unnamed (16).jpg';
-// @ts-ignore
-import unnamed17 from './assets/images/unnamed (17).jpg';
-// @ts-ignore
-import unnamed18 from './assets/images/unnamed (18).jpg';
-// @ts-ignore
-import unnamed19 from './assets/images/unnamed (19).jpg';
-// @ts-ignore
-import unnamed20 from './assets/images/unnamed (20).jpg';
-// @ts-ignore
-import unnamed21 from './assets/images/unnamed (21).jpg';
+import unnamedPng from './assets/images/unnamed.png';
+import unnamed1Img from './assets/images/unnamed_1.jpg';
+import unnamed1Png from './assets/images/unnamed_1.png';
+import unnamed2Img from './assets/images/unnamed_2.jpg';
+import unnamed3Img from './assets/images/unnamed_3.jpg';
+import unnamed4Img from './assets/images/unnamed_4.jpg';
+import unnamed5Img from './assets/images/unnamed_5.jpg';
+import unnamed6Img from './assets/images/unnamed_6.jpg';
+import unnamed7Img from './assets/images/unnamed_7.jpg';
+import baristaBackImg from './assets/images/pngtree-coffee-shop-barista-coffee-cup-work-professional-image_15740425.jpg';
 
 export type { Language };
 
 export const IMAGES = {
   logo: logoImg,
-  luxeInterior: cafeInteriorBg,
-  interior: unnamed5,           // unnamed (5).jpg is green velvet and yellow armchairs downstairs interior
-  upstairs: unnamed3,           // unnamed (3).jpg is seating upstairs next to stairs
-  exterior: unnamed10,          // unnamed (10).jpg is cafe exterior facade illuminated at night
-  breakfast: unnamed12,         // unnamed (12).jpg is Moroccan Meloui platter with butter/honey/cheese
-  coffee: unnamed19,             // cappuccino latte art
-  milkshakes: unnamed8,         // unnamed (8).jpg is avocado/gourmet milkshake with cream
-  windowView: unnamed21,        // unnamed (21).jpg is espresso next to window plants
-  waffle: unnamed15,            // unnamed (15).jpg is crepes with banana and chocolate
-  crepe: unnamed15,             // Crepes
-  facade: unnamed4,             // unnamed (4).jpg is exterior facade and terrace at night
-  pastriesDisplay: unnamed7,    // yellow armchairs seating
-  cookies: unnamed9,            // espresso with water
-  loungeGreen: unnamed5,        // green velvet chairs
-  staircase: unnamed3,          // staircase/upstairs view
-  pancakes: unnamed15,          // crepes/pancakes
-  frenchFruitTarts: unnamed15,
-  traditionalCakes: unnamed17,
-  espressoExtracted: unnamed9,
-  spanishLatte: unnamed20,
-  cozyViewTable: unnamed6,      // glass of Moroccan tea poured high with foam
-  sittingAngle: unnamed7,
-  harchaPlate: unnamed12,       // Meloui platter
+  heroCustomBarista: baristaBackImg,
+  luxeInterior: unnamed5Img, // Clean wooden/green interior space
+  interior: unnamed7Img, // Quiet co-working workspace with coffee and tables
+  upstairs: unnamed3Img, // Seating area next to stairs
+  exterior: unnamed4Img, // Beautiful exterior terrace with city view at night
+  breakfast: unnamed1Img, // Traditional Morocco tea and service on tray
+  coffee: unnamed6Img, // Moroccan mint tea cups and teapot
+  milkshakes: unnamedPng, // Premium dessert milkshakes
+  windowView: unnamed7Img, // Table by plants
+  waffle: unnamedImg, // Waffles / Crepes
+  crepe: unnamedImg,
+  facade: unnamed4Img, // Exterior facade at night
+  pastriesDisplay: unnamed1Png, // Pastry display / dessert
+  cookies: unnamedImg,
+  loungeGreen: unnamed5Img,
+  staircase: unnamed3Img,
+  pancakes: unnamedImg,
+  frenchFruitTarts: unnamed1Png,
+  traditionalCakes: unnamed1Img,
+  espressoExtracted: unnamed2Img,
+  spanishLatte: unnamed6Img,
+  cozyViewTable: unnamed7Img,
+  sittingAngle: unnamed3Img,
+  harchaPlate: unnamed1Img,
 };
 
-// All 22 real photos structured sequentially to be mapped inside our premium gallery
 export const GALLERY_PHOTOS_DATA = [
   {
-    url: unnamedImg,
+    url: unnamed5Img,
     category: 'interior',
-    titleAr: 'ردهة المعجنات والشاي الفاخرة',
-    titleFr: 'The Interior Seating',
-    descAr: 'التقسيم الداخلي للمقهى ببصمته المعمارية الراقية والحديثة مع الإنارة الغامرة والهدوء البديع.',
-    descFr: 'Sophisticated interior setting presenting velvet chairs and glowing ceiling contours.',
+    titleAr: 'التقسيمات الداخلية والراحة المطلقة',
+    titleFr: 'Atmosphère Chaleureuse & Intérieure',
+    descAr: 'تصميم داخلي راقٍ يعبر عن الدفء وتفاصيل الأثاث الخشبي والإنارة الخفيفة المناسبة للدراسة والعمل.',
+    descFr: 'Un cadre soigné, rehaussé par des matériaux nobles et un éclairage tamisé, propice à la détente et au travail.',
     size: 'col-span-1 md:col-span-2'
   },
   {
-    url: unnamed1,
+    url: unnamed1Img,
     category: 'drinks',
-    titleAr: 'صينية أتاي مغربي أصيل بالبراد الفضي',
-    titleFr: 'Authentic Moroccan Tea Service',
-    descAr: 'شاي مغربي منعنع يقدم بالطريقة التقليدية مع براد فضي منقوش وكؤوس مزخرفة على صينية فضية.',
-    descFr: 'Traditional Moroccan mint tea served with an ornate silver teapot and patterned glasses on a tray.',
+    titleAr: 'براد أتاي المغربي الأصيل بالنعناع',
+    titleFr: 'Service de Thé Marocain Authentique',
+    descAr: 'جلسة مغربية لا تكتمل إلا ببراد أتاي منعنع ومنعش يصب برغوة غنية ترحيباً بكم.',
+    descFr: 'L\'emblématique thé marocain à la menthe fraîche, servi dans le respect le plus pur des traditions.',
     size: 'col-span-1'
   },
   {
-    url: unnamed2,
+    url: unnamed6Img,
     category: 'drinks',
-    titleAr: 'قائمة العصائر والمشروبات الطازجة',
-    titleFr: 'Fresh Juices & Beverages Menu',
-    descAr: 'قائمة مطبوعة تضم تشكيلة واسعة من العصائر الطبيعية والمشروبات الباردة الطازجة المحضرة يومياً.',
-    descFr: 'Our printed fruit juice menu offering a great selection of fresh, healthy morning drinks.',
+    titleAr: 'فن الاستضافة وكؤوس الشاي الفاخرة',
+    titleFr: 'Thé Traditionnel aux Herbes',
+    descAr: 'الخدمة المغربية والقهوة لدينا يحرص عليها باريستا محترفون ليقدموا لك كوباً غنياً بالمذاق الرائع.',
+    descFr: 'Nos boissons chaudes sont préparées avec passion pour vous garantir un arôme inoubliable.',
     size: 'col-span-1'
   },
   {
-    url: unnamed3,
+    url: unnamed7Img,
     category: 'interior',
-    titleAr: 'جلسات الطابق الثاني الفسيحة والهادئة',
-    titleFr: 'Cozy Upstairs Seating Area',
-    descAr: 'منطقة جلوس مريحة وعصرية في الطابق العلوي بجانب السلم تتميز بمقاعد صفراء ورمادية أنيقة.',
-    descFr: 'Modern yellow and grey seating area located on the quiet and spacious second floor next to the staircase.',
+    titleAr: 'الزاوية المثالية للعمل والتركيز',
+    titleFr: 'Espace de Co-working Parfait',
+    descAr: 'فضاء مجهز بخدمة الويفي السريع والطاولات المريحة لتوفر لرواد الأعمال والطلبة البيئة المناسبة للإنتاج والتركيز.',
+    descFr: 'Un agencement calme, doté d\'une connexion Wi-Fi haute vitesse pour vos sessions de révision ou réunions.',
     size: 'col-span-1 md:col-span-2'
   },
   {
-    url: unnamed4,
+    url: unnamed4Img,
     category: 'exterior',
-    titleAr: 'واجهة المقهى والشرفة الخارجية ليلاً',
-    titleFr: 'Stunning Exterior Facade at Night',
-    descAr: 'إطلالة ليلية ساحرة على الواجهة الخارجية الأنيقة للمقهى والشرفة المطلة على الهواء الطلق.',
-    descFr: 'The magnificent illuminated exterior facade and open-air terrace patio of our Café at night.',
+    titleAr: 'الشرفة الخارجية على الهواء الطلق',
+    titleFr: 'Terrasse Extérieure Panoramique',
+    descAr: 'استرخ في شرفتنا الجميلة والمطلة على مدينة بنسليمان واستمتع بنسمات الشمس اللطيفة.',
+    descFr: 'Profitez d\'un moment mémorable en plein air dans notre terrasse unique au cœur de la ville.',
     size: 'col-span-1'
   },
   {
-    url: unnamed5,
-    category: 'interior',
-    titleAr: 'الصالون الداخلي بالكراسي المخملية الخضراء',
-    titleFr: 'Luxury Green Velvet Lounge',
-    descAr: 'تصميم داخلي راقٍ يتميز بكراسي مخملية خضراء مريحة وألوان صفراء مبهجة لجلسات عائلية دافئة.',
-    descFr: 'Elegant interior seating zone with plush green velvet armchairs and warm yellow accents.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed6,
-    category: 'drinks',
-    titleAr: 'براد الشاي المغربي المنعنع التقليدي',
-    titleFr: 'Traditional Moroccan Tea Service',
-    descAr: 'كأس من الشاي المغربي العريق يسكب برغوته الغنية مع براد الشاي الفضي والنعناع المنعش.',
-    descFr: 'A hot glass of traditional Moroccan tea poured high to create the iconic foam with a silver sugar bowl.',
-    size: 'col-span-1 md:col-span-2'
-  },
-  {
-    url: unnamed7,
-    category: 'interior',
-    titleAr: 'زاوية الجلوس الصفراء الدافئة',
-    titleFr: 'Charming Yellow Seating Corner',
-    descAr: 'ركن هادئ ومريح يتميز بمقاعد صفراء مبهجة وإضاءة مخفية تناسب العمل أو تبادل أطراف الحديث.',
-    descFr: 'Comfortable yellow upholstered armchairs illuminated with subtle warm lighting for co-working or relaxation.',
-    size: 'col-span-1 md:col-span-2'
-  },
-  {
-    url: unnamed8,
-    category: 'drinks',
-    titleAr: 'ميلك شيك الأفوكادو والشوكولاتة الإمبراطوري',
-    titleFr: 'Avocado Chocolat Supreme Milkshake',
-    descAr: 'أربعة كؤوس طويلة من ميلك شيك الأفوكادو الغني تعلوها جبال من الكريمة المخفوقة ورقائق الأوريو وصوص الشوكولاتة والكراميل.',
-    descFr: 'Four tall glasses of creamy avocado milkshake topped with rich whipped cream, Oreo cookies, and chocolate syrup.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed9,
-    category: 'drinks',
-    titleAr: 'فنجان الإسبريسو رويال مع الماء الفوار',
-    titleFr: 'Espresso Shot with Spring Water',
-    descAr: 'فنجان إسبريسو غني برغوة ذهبية يقدم مع قنينة ماء منعشة على طاولاتنا البيضاء الأنيقة.',
-    descFr: 'Freshly pulled single shot of rich espresso coffee served with a bottle of mineral spring water.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed10,
-    category: 'exterior',
-    titleAr: 'الواجهة الخارجية المبهجة ليلاً لصالون الشاي والمقهى الفاخر',
-    titleFr: 'Patisserie & Café Exterior View',
-    descAr: 'إطلالة ليلية خلابة للواجهة المضيئة المكونة من طابقين لصالون الحلويات والمقهى الفاخر بمدينة بنسليمان.',
-    descFr: 'The eye-catching illuminated two-story modern building facade of our Patisserie & Café at night.',
-    size: 'col-span-1 md:col-span-2'
-  },
-  {
-    url: unnamed11,
-    category: 'drinks',
-    titleAr: 'كاباتشينو الكريمة الكروية الفاخر',
-    titleFr: 'Vienna Cappuccino Supreme',
-    descAr: 'كوب طويل من حليب القهوة الفاخر المغطى بثقيلة من الكريمة المخفوقة ولمسات صوص الكاكاو الغامق.',
-    descFr: 'Creamy hot espresso treat topped with thick whipped cream and artistic sweet chocolate syrup.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed12,
+    url: unnamed2Img,
     category: 'food',
-    titleAr: 'مسمن وملوي بلدي مورق بالزبدة والعسل',
-    titleFr: 'Moroccan Meloui & Msemmen Platter',
-    descAr: 'طبق من المسمن والملوي التقليدي المورق الساخن، يقدم مع الزبدة البلدية، العسل الطبيعي والجبن للأصالة المغربية.',
-    descFr: 'Two plates of warm authentic Moroccan puff pastry flatbreads served with natural honey, butter and cheese.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed13,
-    category: 'drinks',
-    titleAr: 'جلسة براد الشاي المغربي العريق مع السكرية',
-    titleFr: 'Classic Moroccan Mint Tea Set',
-    descAr: 'تحضير شاي النعناع الأصيل في براد فضي مغربي منقوش مع كؤوس زجاجية ملونة وسكرية كلاسيكية مع صينية فضية.',
-    descFr: 'Beautiful ornate silver Moroccan teapot set alongside matching sugar bowl and traditional glasses.',
-    size: 'col-span-1 md:col-span-2'
-  },
-  {
-    url: unnamed14,
-    category: 'drinks',
-    titleAr: 'الفلكلور المغربي: طقم الشاي البراد الفضي',
-    titleFr: 'Moroccan Folklore Teapot Tray',
-    descAr: 'براد مغربي عتيق وسكرية فضية فاخرة يجسدان كرم الضيافة وأصالة التقاليد في مقهانا الراقي بـ بنسليمان.',
-    descFr: 'A highly detailed silver teapot and sugar bowl set displayed on an authentic silver serving tray.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed15,
-    category: 'pastries',
-    titleAr: 'كريب ونوتيلا بالموز والكريمة الطازجة',
-    titleFr: 'Sweet Banana & Chocolate Crepes',
-    descAr: 'قطعتين من الكريب الذهبي المطوي والمحشو بقطع الموز مع صوص الشوكولاتة وجبال الكريمة الغنية.',
-    descFr: 'Delicious folded sweet crepes filled with banana slices, topped with fresh cream and fudge syrup.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed16,
-    category: 'drinks',
-    titleAr: 'جلسة القهوة السريعة بالفناء',
-    titleFr: 'Quick Espresso Break Desk',
-    descAr: 'فنجان إسبريسو مركز مع قنينة ماء طازجة على طاولات الشرفة الخارجية ليوم عمل نشيط.',
-    descFr: 'An espresso cup alongside bottled mineral water served on a sleek outdoor patio table.',
-    size: 'col-span-1 md:col-span-2'
-  },
-  {
-    url: unnamed17,
-    category: 'pastries',
-    titleAr: 'حلويات مغربية وعصرية متميزة',
-    titleFr: 'Exclusive Morocco & French Pastries',
-    descAr: 'تشكيلة رائعة من الحلويات التقليدية والفرنسية الراقية المحضرة بكل حب وشغف.',
-    descFr: 'A wonderful selection of traditional Moroccan and fine French pastries made with love.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed18,
-    category: 'drinks',
-    titleAr: 'استخلاص الإسبريسو المعزز',
-    titleFr: 'Perfect Espresso Extraction',
-    descAr: 'استخلاص قهوة إسبريسو غنية ومثالية تحت إشراف باريستا محترف للحصول على نكهة غنية.',
-    descFr: 'Freshly extracted rich espresso shot with perfect thick crema under professional supervision.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed19,
-    category: 'drinks',
-    titleAr: 'فن رغوة الكابتشينو البديع',
-    titleFr: 'Artistic Cappuccino Latte Art',
-    descAr: 'كوب من الكابتشينو الساخن مزين برسمة فنية مميزة من الحليب المخفوق.',
-    descFr: 'A perfectly crafted warm cup of cappuccino decorated with exquisite milk foam art.',
-    size: 'col-span-1 md:col-span-2'
-  },
-  {
-    url: unnamed20,
-    category: 'drinks',
-    titleAr: 'سبانش لاتيه بارد ومثلج',
-    titleFr: 'Chilled Spanish Latte Bottle',
-    descAr: 'قنينة زجاجية من السبانش لاتي المبرد مع طبقات متناسقة من القهوة والحليب لمذاق منعش.',
-    descFr: 'An eye-catching cold Spanish latte bottle displaying beautiful espresso and sweet milk layers.',
-    size: 'col-span-1'
-  },
-  {
-    url: unnamed21,
-    category: 'drinks',
-    titleAr: 'قهوة الصباح الهادئة بجانب النافذة',
-    titleFr: 'Morning Espresso by the Window',
-    descAr: 'فنجان قهوة إسبريسو ساخن بجانب النباتات الخضراء اليانعة تحت ضوء النهار المنعش.',
-    descFr: 'A relaxing single espresso cup served next to beautiful green window plants under warm sunlight.',
+    titleAr: 'وجبة فطور متكاملة ولذيذة',
+    titleFr: 'Petit-Déjeuner Copieux',
+    descAr: 'من الحلويات الطازجة والخبز الساخن إلى المسمن والحرشة، فطور يعطيك الطاقة الكافية لبدء يومك بهمة.',
+    descFr: 'Une sélection festive de pains thermiques, pâtisseries croustillantes locales et boissons fruitées.',
     size: 'col-span-1'
   }
 ];
@@ -283,169 +104,129 @@ export const GALLERY_PHOTOS_DATA = [
 export const MENU_ITEMS: MenuItem[] = [
   {
     id: 'm1',
-    titleAr: 'الفطور البلدي الفاخر',
-    titleFr: 'Petit-Déjeuner Beldi',
-    descAr: 'صينية الفطور المغربي الأصيل: براد أتاي، مسمن بلدي مورق، خبز دافئ، زيت زيتون ممتازة، كيري، عسل برتقال ومربى الفراولة اللذيذ.',
-    descFr: 'Le grand plateau marocain authentique : théière de thé à la menthe fraîche, msemmen feuilleté, pain chaud, huile d\'olive extra vierge, portions kiri, miel de fleurs et confiture.',
-    price: '39',
+    titleAr: 'الفطور المغربي البلدي',
+    titleFr: 'Petit-Déjeuner Beldi Marocain',
+    descAr: 'صينية الفطور الأصيل: براد أتاي مغربي ساخن بالنعناع، مسمن بلدي مورق، حرشة ساخنة بالزبـدة، عسل طبيعي، زيت زيتون ممتازة وحلوى طرية.',
+    descFr: 'Plateau traditionnel complet : théière de thé à la menthe infuse, msemmen, harcha dorée, morceaux de beurre, miel pur et huile d\'olive fine.',
+    price: '35',
     category: 'breakfast',
-    image: unnamed13,
+    image: unnamed1Img,
     popular: true
   },
   {
     id: 'm2',
     titleAr: 'حرشة السميد الساخنة بالزبدة',
     titleFr: 'Harcha Traditionnelle',
-    descAr: 'أقراص حرشة السميد المغربية التقليدية المخبوزة بعناية فائقة، تقدم ساخنة مع الزبدة والعسل الطبيعي.',
-    descFr: 'Délicieuse galette de semoule marocaine cuite sur plaque, servie chaude accompagnée de beurre fondant et miel pur.',
+    descAr: 'أقراص حرشة مغربية بنكهة السميد الأصيلة المخبوزة بعناية فائقة، تقدم مع الزبدة والعسل الطبيعي.',
+    descFr: 'Délicieuse galette de semoule marocaine cuite minute, servie avec sa touche fondante de miel frais.',
     price: '15',
     category: 'breakfast',
-    image: unnamed12
-  },
-  {
-    id: 'm2a',
-    titleAr: 'صحن البانكيك الطري الشافي',
-    titleFr: 'Plat de Pancakes Fluffy',
-    descAr: 'بانكيك أمريكي خفيف ذي قوام إسفنجي يقدم مع العسل البارد وجبنة دهن وزبدة طرية.',
-    descFr: 'Pancakes américains ultra-moelleux cuits minute, dorés à souhait, servis avec du miel sauvage ou de la confiture.',
-    price: '22',
-    category: 'breakfast',
-    image: unnamed15
-  },
+    image: unnamedImg
+  }   ,
   {
     id: 'm3',
-    titleAr: 'قهوة حليب نص-نص مغربية',
-    titleFr: 'Café au Lait Nous-Nous',
-    descAr: 'القهوة المغربية التقليدية الشهيرة برغوة غنية وحليب ساخن متناسق.',
-    descFr: 'Le café traditionnel marocain par excellence, mélangé moitié-moitié avec du lait chaud velouté.',
-    price: '15',
+    titleAr: 'كاباتشينو دريم الكريمي الفاخر',
+    titleFr: 'Cappuccino Dream Velouté',
+    descAr: 'قهوة إسبريسو مزدوجة مركزة، حليب طازج مبخر برغوة في غاية النعومة، مزينة بمسحوق الكاكاو الداكن ورسمة باريستا كلاسيكية.',
+    descFr: 'Onctueuse crème de lait soyeux mariée à notre expresso fraîchement extrait pour un plaisir total.',
+    price: '25',
     category: 'drinks',
-    image: unnamed21
+    image: unnamed6Img,
+    popular: true
   },
   {
     id: 'm4',
-    titleAr: 'كاباتشينو إيطالي فاخر',
-    titleFr: 'Cappuccino Crème Art',
-    descAr: 'قهوة إسبريسو غنية مع الحليب المبخر ورسمة الكريمة المخفوقة الرائعة كما تظهر في صورنا الحقيقية.',
-    descFr: 'Espresso double premium avec du lait soyeux et une généreuse couche de mousse crémeuse artistique.',
-    price: '25',
+    titleAr: 'قهوة حليب نص-نص مغربية',
+    titleFr: 'Café Nous-Nous Marocain',
+    descAr: 'القهوة المغربية المحبوبة بخلطة متوازنة تماماً بين الإسبريسو القوي والحليب الساخن الكثيف.',
+    descFr: 'Le café typiquement marocain, associant l\'intensité de l\'expresso à la douceur du lait chaud mousseux.',
+    price: '15',
     category: 'drinks',
-    image: unnamed11,
-    popular: true
+    image: unnamed2Img
   },
   {
-    id: 'm4a',
-    titleAr: 'إسبريسو رويال دبل شوت',
+    id: 'm5',
+    titleAr: 'إسبريسو رويال مركز دبل شوت',
     titleFr: 'Espresso Double Crema',
-    descAr: 'فنجان قهوة مركز مستخلص بأعلى درجات الفن بإسبريسو مع طبقة كريمة شوكولاتية متينة ورائعة.',
-    descFr: 'Expresso serré double extrait avec une pression maîtrisée pour une richesse aromatique incomparable.',
+    descAr: 'فنجان قهوة مركز وغني للغاية بطعم متوازن ومركّز مائة بالمائة من حبوب البن المحمصة الطازجة.',
+    descFr: 'Un double expresso corsé au goût riche et équilibré, doté d\'une magnifique crème veloutée dorée.',
     price: '18',
     category: 'drinks',
-    image: unnamed9
-  },
-  {
-    id: 'm4b',
-    titleAr: 'سبانش لاتي مثلج بالعبوة',
-    titleFr: 'Spanish Latte Premium',
-    descAr: 'عبوة زجاجية خاصة مبردة من السبانش لاتي الإسباني الممتاز، قهوة منعشة تناسب حر البهيج بـبنسليمان.',
-    descFr: 'Une somptueuse bouteille de Spanish Latte glacé, mélange exquis d\'espresso premium et de laits onctueux.',
-    price: '30',
-    category: 'drinks',
-    image: unnamed20
+    image: unnamed2Img
   },
   {
     id: 'm6',
-    titleAr: 'ميلك شيك شوكولا رويال كينج',
-    titleFr: 'Milkshake Chocolat Suprême',
-    descAr: 'عصير الشوكولاتة الأغنق الممزوج بالحليب الطازج والجيلاتو يقدم بكوب مرتفع تعلوه جبال من الكريمة المخفوقة وصوص فدج.',
-    descFr: 'Délice crémeux au chocolat noir fusionné avec notre glace artisanale, nappé de sauce cacao et surmonté de chantilly.',
+    titleAr: 'ميلك شيك الأفوكادو والشوكولاته الملكي',
+    titleFr: 'Milkshake Royal Avocat & Chocolat',
+    descAr: 'عصير الأفوكادو الفاخر ممزوج بالجيلاتو والحليب الطازج، مغطى بطبقة رائعة من الكريمة المخفوقة وصوص الشوكولاتة البلجيكية.',
+    descFr: 'Une boisson signature glacée à l\'avocat frais et crème glacée, rehaussée de chantilly et d\'un trait de cacao suisse.',
     price: '32',
     category: 'desserts',
-    image: unnamed8,
+    image: unnamedPng,
     popular: true
   },
   {
-    id: 'm6a',
-    titleAr: 'ماكرون باريس الفاخر',
-    titleFr: 'Sélection de Macarons Fins',
-    descAr: 'عمر عينيك بقطع الماكرون الفرنسية بألوان البهجة ونكهات الفراولة، الفستق، الليمون والشوكولاتة.',
-    descFr: 'Assortiment de véritables macarons parisiens croquants à l\'extérieur et fondants à l\'intérieur.',
-    price: '24',
-    category: 'desserts',
-    image: unnamed7
-  },
-  {
     id: 'm7',
-    titleAr: 'تارت الفواكه الطازجة بالتوت',
+    titleAr: 'تارت الفواكه الطازجة بالتوت البري',
     titleFr: 'Tartelette Impériale aux Fruits',
     descAr: 'تارت المقرمشة المحشورة بالكامل بكريمة كستر ومسورة بالتوت الأحمر والكيوي وشرائح الفراولة اللامعة.',
-    descFr: 'Tartelette croustillante au beurre, garnie decfameux velouté de crème pâtissière et baies sauvages brillantes.',
+    descFr: 'Tartelette croustillante au beurre, garnie de fameux velouté de crème pâtissière et baies sauvages brillantes.',
     price: '25',
     category: 'desserts',
-    image: unnamed16
-  },
-  {
-    id: 'm7a',
-    titleAr: 'كيك الشوكولاتة والغاناش البلجيكي',
-    titleFr: 'Gâteau Opéra Chocolat belge',
-    descAr: 'قطعة كيك غنية بطبقات الإسفنج الرطب والغاناش الذائب مغطاة بطبقة لامعة ومزينة بعشاق الشوكولاتة.',
-    descFr: 'Délicieuse part de gâteau au chocolat premium riche en ganache fondante pour les amoureux de douceurs raffinées.',
-    price: '28',
-    category: 'desserts',
-    image: unnamed17
+    image: unnamed1Png
   },
   {
     id: 'm8',
-    titleAr: 'مسمن بلدي مغربي مورق بالزبدة',
-    titleFr: 'Msemmen Beldi Royal',
-    descAr: 'رغايف المسمن المغربي الأصيل المورق واللذيذ الساخن مع الزبدة البلدية، العسل والجبن وقنينة ماء.',
-    descFr: 'Moroccan puff fold puff pastries (Msemmen) served warm with real country butter, liquid honey, cheese cups and water.',
+    titleAr: 'مسمن بلدي مغربي مورق وساخن',
+    titleFr: 'Msemmen Feuilleté Traditionnel',
+    descAr: 'أقراص المسمن المغربي المورق الساخن، يقدم مع زبدة طازجة وعسل برتقال نقي للتحلية الصباحية.',
+    descFr: 'Fines crêpes feuilletées de tradition, préparées au beurre et servies tièdes dorées à souhait.',
     price: '15',
     category: 'waffles',
-    image: unnamed12
+    image: unnamed1Img
   }
 ];
 
 export const REVIEWS: Review[] = [
   {
     id: 'r1',
-    author: 'Mouaadan Chahi',
-    roleAr: 'مرشد محلي (216 تقييم)',
-    roleFr: 'Local Guide (216 avis)',
+    author: 'Younesse Reddad',
+    roleAr: 'مرشد محلي خرائط Google',
+    roleFr: 'Local Guide Google Maps',
     stars: 5,
-    dateAr: 'منذ شهر',
-    dateFr: 'Il y a 1 mois',
-    textAr: 'مقهى رائع جداً وتصميم داخلي فاخر ومريح! الإضاءة دافئة والكراسي مريحة للغاية ومناسبة للعائلات واللقاءات.',
-    textFr: 'Café très élégant avec un design intérieur luxeux et confortable ! L\'éclairage est chaleureux, les chaises sont super confortables, idéales pour les familles.'
+    dateAr: 'منذ ٣ أشهر',
+    dateFr: 'Il y a 3 mois',
+    textAr: 'اكتشاف رائع جداً! الفضاء دافئ ومثالي للعمل والتركيز. قهوة اللاتيه كريمية وسلسة للغابة وطاقم العمل يرحب بك بابتسامة دافئة. حتماً سأعود مجدداً!',
+    textFr: 'Superbe découverte ! Le cadre est chaleureux et parfait pour travailler. Le latte est crémeux et le personnel très accueillant, je reviendrai. Terrasse idéale !'
   },
   {
     id: 'r2',
-    author: 'Sara Benslimane',
-    roleAr: 'زبونة دائم',
+    author: 'Khangui Soukaina',
+    roleAr: 'زبون دائم مميز',
     roleFr: 'Client Régulier',
     stars: 5,
-    dateAr: 'منذ أسبوعين',
-    dateFr: 'Il y a 2 semaines',
-    textAr: 'أنا أحب فطورهم البلدي وخاصة براد الشاي المنعنع والأومليت الطري المعروض في صورهم. الخدمة سريعة في شمس المدينة بنسليمان.',
-    textFr: 'J\'adore leur petit-déjeuner Beldi, en particulier le thé infusé et l\'omelette tendre. Le service est rapide et de qualité à Shams Al Madina, Benslimane.'
+    dateAr: 'منذ ٣ أشهر',
+    dateFr: 'Il y a 3 mois',
+    textAr: 'أفضل مكان لتناول وجبة فطور الصباح الهادئة ببنسليمان بمكونات ممتازة وخدمة في منتهى الاحتراف واللطف وتقديم ممتاز للأطباق والمشروبات.',
+    textFr: 'Excellent endroit pour le petit-déjeuner. Service rapide et agréable. Mets de qualité supérieure, je recommande chaudement Dream Coffee !'
   },
   {
     id: 'r3',
-    author: 'Youssef Alami',
-    roleAr: 'زائر من الدار البيضاء',
-    roleFr: 'Visiteur de Casablanca',
+    author: 'Sara Shams',
+    roleAr: 'مرشدة محلية',
+    roleFr: 'Avis Google Maps',
     stars: 5,
-    dateAr: 'منذ شهر',
-    dateFr: 'Il y a un mois',
-    textAr: 'عند زيارتي لبنسليمان، هذا المقهى هو محطتي المفضلة. الميلك شيك أوريو والوافل قمة اللذة وأسعاره مناسبة جداً مقارنة بالفخامة والجو الهادئ.',
-    textFr: 'Quand je visite Benslimane, ce Café est mon arrêt préféré. Le milkshake Oréo et la gaufre sont un pur délice, et les prix sont très corrects.'
+    dateAr: 'منذ أسبوعين',
+    dateFr: 'Il y a 2 semaines',
+    textAr: 'شرفة رائعة جداً في غولف شمس المدينة تتيح لك قضاء أجمل اللحظات العائلية بجانب كوب من المشروب المنعش أو قهوة الصباح البهية.',
+    textFr: 'Une terrasse parfaite pour observer les environs avec un grand choix de desserts délicieux et de jus pressés !'
   }
 ];
 
 export const DICTIONARY = {
   ar: {
-    title: 'صالون الشاي والمقهى الفاخر | بنسليمان',
-    navLogo: 'CAFÉ LUXE',
+    title: 'مقهى دريم كوفي الفاخر | بنسليمان شمس المدينة',
+    navLogo: 'DREAM COFFEE',
     navHome: 'الرئيسية',
     navAbout: 'قصتنا',
     navMenu: 'القائمة',
@@ -453,162 +234,162 @@ export const DICTIONARY = {
     navReserve: 'احجز طاولة',
     navAdmin: 'لوحة التحكم',
     
-    heroTitle: 'فخامة المذاق واللحظة في قلب بنسليمان',
-    heroSubtitle: 'استمتع بتجربة راقية تمزج بين دفء التقاليد المغربية وعصرنة التصاميم الراقية في شمس المدينة.',
+    heroTitle: 'أرقى تجربة قهوة ومذاق في قلب بنسليمان',
+    heroSubtitle: 'اهرب من الروتين اليومي وعش لحظاتك معنا بمقهى دريم كوفي في شمس المدينة. نرحب بكم في بيئة هادئة ودافئة تدار بلمسة نسائية راقية وكرم ضيافة مميز.',
     heroCTA: 'استكشف قائمتنا للذهاب',
     heroReserveCTA: 'احجز طاولة الآن',
     
-    aboutTitle: 'أرقى صالون شاي ومقهى فاخر ببنسليمان',
-    aboutSubtitle: 'أين تجتمع الأناقة واللذة',
-    aboutP1: 'يقع مقهانا وصالون الشاي الفاخر في حي شمس المدينة الهادئ والراقي ببنسليمان، وهو ليس مجرد فضاء عادي، بل هو وجهة لعشاق الذوق الرفيع. صمم المقهى بديكورات مخملية وألواح خشبية دافئة وإضاءة ذهبية غامرة توفر لك الراحة المطلقة.',
-    aboutP2: 'من فطورنا البلدي التقليدي ببراد أتاي المغربي والمسمن الساخن المورق بالزبدة، إلى قهوتنا الإيطالية الفاخرة، وميلك شيك الشوكولاتة الغني المزين بالكريمة الطازجة، نحرص على تقديم أطباق مجهزة بأجود المكونات الطازجة وأرقى أساليب الضيافة.',
-    aboutMetaHeading: 'فن الضيافة المغربية',
-    aboutMeta1: 'مكونات محلية طازجة 100%',
-    aboutMeta2: 'بيئة هادئة ومكيفة للعائلات والعمل',
-    aboutMeta3: 'فريق عمل محترف يرحب بكم بابتسامة',
-
-    menuTitle: 'تذوق قائمتنا المميزة',
-    menuSubtitle: 'فن المذاق المحضر بشغف وبمكونات طازجة لتلبي رغباتكم في أي وقت',
+    aboutTitle: 'قصتنا في Dream Coffee بنسليمان',
+    aboutSubtitle: 'حيث التفاصيل ترسم الفرح والراحة',
+    aboutP1: 'يقع مقهى دريم كوفي في بلاتوه غولف شمس المدينة الراقي بمدينة بنسليمان، وهو فضاء استثنائي تم تصميمه بعناية فائقة ليكون أكثر من مجرد مقهى عادي. تجمع الديكورات الدافئة المكسوة بالأخشاب الطبيعية والإضاءة الهادئة لتمنحك ملاذاً في غاية الراحة.',
+    aboutP2: 'مقهانا يدار بلمسة نسائية راقية تحرص على تقديم أرقى التفاصيل للترحيب بكم. من فطورنا البلدي التقليدي ببراد أتاي المغربي الساخن والمسمن والحرشة الطازجة، لقهوتنا الإيطالية المستخلصة بكريمة ممتازة وفطائرنا وحلوياتنا الفاخرة، يضمن لكم طاقمنا خدمة سريعة وراقية تليق بكم.',
+    aboutMetaHeading: 'فن الاستضافة الدافئة',
+    aboutMeta1: 'خدمة سريعة في منتهى اللطف والدقة',
+    aboutMeta2: 'فضاء داخلي هادئ مريح للعمل واللقاءات العائلية',
+    aboutMeta3: 'شرفة خارجية رائعة تطل على جمال شمس المدينة',
+    
+    menuTitle: 'قائمة Dream Coffee اللذيذة',
+    menuSubtitle: 'تشكيلة غنية محضرة بكل شغف لتناسب مذاقكم الرفيع في الصباح والمساء',
     menuAll: 'الكل',
-    menuBreakfast: 'الفطور والوجبات الصباحية',
+    menuBreakfast: 'الأطباق والفطور الصباحي',
     menuDrinks: 'القهوة والمشروبات المنعشة',
-    menuDesserts: 'ميلك شيك وحلويات فاخرة',
-    menuWaffles: 'المسمن والمعجنات البلدية',
-    popupPopular: 'الأكثر طلباً',
+    menuDesserts: 'الحلويات وعصائر الجيلاتو',
+    menuWaffles: 'المسمن والبلدي المغربي',
+    popupPopular: 'الأكثر طلباً ✨',
     currency: 'درهم',
     
-    reserveTitle: 'احجز طاولة خاصة بك مجاناً',
-    reserveSubtitle: 'اضمن طاولتك المفضلة في أجواء هادئة وراقية بضغطة زر واحدة. سنؤكد حجزك فوراً!',
+    reserveTitle: 'احجز طاولتك المفضلة مجاناً',
+    reserveSubtitle: 'اضمن مكانك الهادئ والمفضل للدراسة، العمل، أو جلسة عائلية دافئة. سنؤكد حجزك فورا عبر الواتساب!',
     reserveFormName: 'اسمك الكامل',
-    reserveFormPhone: 'رقم هاتف الواتساب',
-    reserveFormGuests: 'عدد الأشخاص',
-    reserveFormDate: 'تاريخ الحجز',
-    reserveFormTime: 'توقيت الحجز',
-    reserveFormNotes: 'ملاحظات خاصة (مثلا: طاولة بجانب النافذة، احتفال بالذكرى...)',
-    reserveFormSubmit: 'تأكيد الطلب والحجز',
-    reserveSuccess: '🎉 تم إرسال حجزك بنجاح! سيقوم فريقنا بالاتصال بك أو إرسال تأكيد على الواتساب فوراً.',
-    reserveSyncing: 'جاري الربط مع Google Sheets وإرسال البيانات...',
-    reserveSynced: 'تمت مزامنة الحجز الحقيقي بنجاح لجدول البيانات!',
-    reserveSheetHint: 'البيانات تم إرسالها لجدول جوجل شيت برقم الحجز الخاص بك.',
-
-    marketingTitle: 'انضم لنادي VIP والمزايا الخاصة',
-    marketingSubtitle: 'سجل بريدك الإلكتروني للحصول على خصم 15% فوري في زيارتك القادمة وأحدث عروضنا اللذيذة!',
-    marketingPlaceholder: 'أدخل بريدك الإلكتروني هنا',
-    marketingBtn: 'انضمام فوري لـ VIP',
-    marketingSuccess: 'أهلاً بك في نادينا! لقد تم تسجيل بريدك الإلكتروني بنجاح، استعرض هذا التأكيد عند الدفع للحصول على خصم 15%!',
-    whatsappBtn: 'تواصل معنا على واتساب',
-    whatsappMessage: 'مرحباً، أريد الاستفسار عن حجز طاولة أو قائمة اليوم.',
+    reserveFormPhone: 'رقم هاتفك للاتصال',
+    reserveFormGuests: 'عدد زبنائنا الكرام',
+    reserveFormDate: 'تاريخ حجز الطاولة',
+    reserveFormTime: 'توقيت حضوركم وتألقكم',
+    reserveFormNotes: 'أي طلبات خاصة يسعدنا تلبيتها (طاولة للعمل واللابتوب، بجانب النافذة، احتفال خاص...)',
+    reserveFormSubmit: 'تأكيد الحجز والتواصل',
+    reserveSuccess: '🎉 تم إرسال طلب حجزك بنجاح! سيتم التواصل معك أو توجيهك فوراً لتأكيد حجزك عبر الواتساب لضمان راحتكم.',
+    reserveSyncing: 'جاري تسجيل حجزك ومزامنته بـ Google Sheets...',
+    reserveSynced: 'تم الحفظ والمزامنة الحية لجدول الحجوزات بنجاح!',
+    reserveSheetHint: 'لقد تم إدراج الطلب في سجلات نظام الحجوزات لمتابعة طلبكم.',
     
-    reviewTitle: 'شهادات زبنائنا الأوفياء',
-    reviewSubtitle: 'بكل حب استقبلنا أكثر من 35 تقييماً عبر خرائط Google وصنفنا من أرقى مقاهي بنسليمان',
+    marketingTitle: 'ادخل نادي الزبناء الأوفياء VIP',
+    marketingSubtitle: 'سجل بريدك الإلكتروني للحصول على كود خصم -15% فوري لزيارتك القادمة بمقهى دريم كوفي والاستفادة من عروضنا الخاصة!',
+    marketingPlaceholder: 'أدخل بريدك الإلكتروني هنا',
+    marketingBtn: 'اشترك في قائمة VIP للخصومات',
+    marketingSuccess: 'تهانينا الحارة! تم تسجيلك بنجاح في نادي دريم كوفي الأوفياء، أظهر هذا التأكيد عند الدفع لتحصل على خصم 15% فورا بزيارتك القادمة!',
+    whatsappBtn: 'تواصل مباشر بالواتساب',
+    whatsappMessage: 'مرحباً دريم كوفي بنسليمان، أريد الاستفسار عن حجز طاولة أو قائمة اليوم.',
+    
+    reviewTitle: 'أصداء وآراء زبنائنا على Google Maps',
+    reviewSubtitle: 'نسعد بخدمتكم وتدوين مراجعاتكم بمتوسط تقييم 5.0 كاملات تفتخر بها عائلتنا بـ Benslimane',
     reviewAddBtn: 'اكتب تقييمك الخاص',
-    reviewPlaceholder: 'شاركنا رأيك في هذا المقهى الراقي...',
-    reviewSubmit: 'نشر التقييم',
-
-    adminTitle: 'إدارة الحجوزات (المدير)',
-    adminCodeLabel: 'أدخل رمز المدير لرؤية الحجوزات الحقيقية',
-    adminSubmit: 'دخول الآدمن',
-    adminWrongCode: 'رمز مرور غير صحيح!',
-    adminActiveReservations: 'قائمة الحجوزات النشطة لـ Café',
-    adminSearchPlaceholder: 'ابحث بالاسم أو رقم الهاتف...',
-    adminTotal: 'إجمالي الحجوزات',
-    adminExportCSV: 'تصدير كـ CSV لـ Excel',
-    adminMarkChecked: 'قبول وتأكيد',
+    reviewPlaceholder: 'يسعدنا أن تنير عقولنا برأيك الجميل حول قهوتك وتجربتك معنا اليوم...',
+    reviewSubmit: 'نشر مراجعتك فوراً',
+    
+    adminTitle: 'لوحة التحكم والمدير',
+    adminCodeLabel: 'يرجى إدخال رمز الوصول لإدارة الحجوزات وقبول الطلبات',
+    adminSubmit: 'تسجيل الدخول الآمن',
+    adminWrongCode: 'رمز وصول خاطئ! حاول مجدداً.',
+    adminActiveReservations: 'الحجوزات والطلبات النشطة لـ Dream Coffee',
+    adminSearchPlaceholder: 'ابحث بالاسم، التاريخ، أو الهاتف...',
+    adminTotal: 'مجموع الحجوزات المسجلة',
+    adminExportCSV: 'تنزيل الحجوزات كـ Excel (CSV)',
+    adminMarkChecked: 'الموافقة والقبول',
     adminMarkCancel: 'إلغاء الحجز',
-    adminStatusConfirmed: 'مؤكد',
-    adminStatusPending: 'معلق',
-    adminStatusCancelled: 'ملغى',
-    adminNoReservations: 'لا توجد حجوزات متطابقة حالياً.',
-
-    footerHours: 'ساعات العمل والخدمة',
-    footerEveryday: 'مفتوح يومياً',
-    footerAddress: 'العنوان الجغرافي',
-    footerAddressDetails: 'شارع شمس المدينة، منطقة Benslimane (رمز JV89+MG)',
-    footerCall: 'اتصال هاتفي مباشر',
-    footerRights: 'جميع الحقوق محفوظة للمقهى ببنسليمان © 2026. تم التطوير بمهارة تامة.'
+    adminStatusConfirmed: 'مقبول ومؤكد',
+    adminStatusPending: 'معلق ومراجع',
+    adminStatusCancelled: 'تم الإلغاء',
+    adminNoReservations: 'لا توجد طلبات جارية متطابقة.',
+    
+    footerHours: 'ساعات الخدمة والاستقبال',
+    footerEveryday: 'مفتوح يومياً حتى الساعة 23:30',
+    footerAddress: 'موقعنا الجغرافي الراقي',
+    footerAddressDetails: 'غولف شمس المدينة، بنسليمان 13000، المغرب',
+    footerCall: 'اتصال هاتفي سريع ومباشر',
+    footerRights: 'جميع الحقوق محفوظة لمقهى Dream Coffee Benslimane © 2026. تم التصميم باحترافية كاملة.'
   },
   fr: {
-    title: 'CAFÉ LUXE - Benslimane',
-    navLogo: 'CAFÉ LUXE',
+    title: 'Dream Coffee Benslimane | Café Chaleureux & Espace Travail',
+    navLogo: 'DREAM COFFEE',
     navHome: 'Accueil',
     navAbout: 'Notre Histoire',
     navMenu: 'Menu',
-    navReviews: 'Avis',
-    navReserve: 'Réservez',
-    navAdmin: 'Configuration',
+    navReviews: 'Avis Clients',
+    navReserve: 'Réserver une table',
+    navAdmin: 'Administration',
     
-    heroTitle: 'L\'Art du Café et du Goût à Benslimane',
-    heroSubtitle: 'Plongez dans un havre de paix alliant la chaleur des traditions marocaines au raffinement moderne au cœur de Shams Al Madina.',
-    heroCTA: 'Découvrir le Menu',
-    heroReserveCTA: 'Réserver une table',
+    heroTitle: 'L\'expérience ultime du café à Benslimane',
+    heroSubtitle: 'Plongez dans un havre de paix géré avec un professionnalisme méticuleux et des touches délicates. Un cadre chaleureux combiné à un goût royal aux portes de Shams Al Madina.',
+    heroCTA: 'Parcourir nos Délices',
+    heroReserveCTA: 'Réserver ma Table',
     
-    aboutTitle: 'Salon & Café Luxe - Benslimane',
-    aboutSubtitle: 'Le design rencontre la gastronomie authentique',
-    aboutP1: 'Niché dans le quartier accueillant et chic de Shams Al Madina à Benslimane, notre salon et café de luxe est bien plus qu\'un simple lieu de pause. C\'est une invitation au luxe discret avec ses canapés en velours douillets, ses tons boisés apaisants et ses touches dorées étincelantes sous une lumière tamisée.',
-    aboutP2: 'Que ce soit pour notre authentique plateau de petit-déjeuner Beldi avec sa théière fraîche et nos msemmen feuilletés, ou pour savourer notre Cappuccino onctueux préparé par des baristas qualifiés, nous nous engageons à offrir le meilleur de la gastronomie et de l\'accueil marocain.',
-    aboutMetaHeading: 'L\'Art de la Convivialité',
-    aboutMeta1: 'Ingrédients de première qualité locaux et frais',
-    aboutMeta2: 'Espace familial calme, convivial et climatisé',
-    aboutMeta3: 'Une équipe dévouée, accueillante et professionnelle',
-
-    menuTitle: 'Explorez Notre Univers Gourmand',
-    menuSubtitle: 'Des recettes faites maison avec amour pour éveiller vos papilles à tout moment de la journée',
-    menuAll: 'Tous nos articles',
-    menuBreakfast: 'Petits-Déjeuners',
-    menuDrinks: 'Cafés & Boissons Chaudes',
-    menuDesserts: 'Milkshakes & Pâtisseries fines',
-    menuWaffles: 'Msemmen & Feuillettés Beldi',
-    popupPopular: 'Populaire',
+    aboutTitle: 'L\'Histoire de Dream Coffee',
+    aboutSubtitle: 'Le confort absolu pour étudier, travailler & se détendre',
+    aboutP1: 'Idéalement implanté sur la zone prestigieuse de Golf Shams Al Madina à Ben Slimane, Dream Coffee est un café et salon de thé se distinguant par son identité gérée par une femme, incarnant le charme discret et une hospitalité attentionnée incomparable.',
+    aboutP2: 'Chaque détail est peaufiné pour enrichir vos moments, que ce soit à travers une connexion Internet à haut débit, des canapés moelleux et accueillants, notre fameux double expresso à la crème dorée, ou notre plat complet de petit-déjeuner Beldi de tradition marocaine. Nous garantissons un accueil et service mémorables.',
+    aboutMetaHeading: 'L\'Excellence Culinaire & Convivialité',
+    aboutMeta1: 'Service rapide, prévenant et d\'un grand dynamisme',
+    aboutMeta2: 'Espace cozy idéal pour étudier et travailler d\'ordinateur',
+    aboutMeta3: 'Une terrasse spacieuse dominant le paysage urbain de la ville',
+    
+    menuTitle: 'Explorez Les Délices de Dream Coffee',
+    menuSubtitle: 'Des mets frais faits maison à savourer seul ou en famille sous les étoiles de Benslimane',
+    menuAll: 'Tout le Menu',
+    menuBreakfast: 'Petits-Déjeuners Authentiques',
+    menuDrinks: 'Cafés d\'Origine & Cocktails Frais',
+    menuDesserts: 'Pâtisseries & Milkshakes Élite',
+    menuWaffles: 'Crêpes, Waffles & Finesse Beldi',
+    popupPopular: 'Recommandé ✨',
     currency: 'MAD',
     
-    reserveTitle: 'Réservez votre Table en Ligne',
-    reserveSubtitle: 'Agrémentez your journée en garantissant votre table préférée dans une ambiance luxueuse et détendue. Confirmation instantanée !',
-    reserveFormName: 'Nom complet',
-    reserveFormPhone: 'Numéro WhatsApp',
-    reserveFormGuests: 'Nombre de personnes',
-    reserveFormDate: 'Date recommandée',
-    reserveFormTime: 'Heure souhaitée',
-    reserveFormNotes: 'Demande particulière (ex: près de la fenêtre, anniversaire...)',
-    reserveFormSubmit: 'Soumettre la réservation',
-    reserveSuccess: '🎉 Votre réservation a été transmise ! Notre équipe vous contactera sous peu par téléphone ou WhatsApp pour confirmer.',
-    reserveSyncing: 'Synchronisation avec Google Sheets en cours...',
-    reserveSynced: 'Réservation synchronisée en temps réel sur Google Sheets !',
-    reserveSheetHint: 'Vos données ont été postées avec succès sur la feuille de calcul du Café.',
-
-    marketingTitle: 'Rejoignez le Club VIP de Café',
-    marketingSubtitle: 'Entrez votre e-mail pour recevoir instantanément une remise de -15% sur votre prochaine visite et découvrir nos lancements exclusifs !',
-    marketingPlaceholder: 'Votre adresse e-mail',
-    marketingBtn: 'Rejoindre le Club',
-    marketingSuccess: 'Code VIP activé ! Montrez ce message en caisse lors de votre visite pour obtenir votre réduction de 15%.',
-    whatsappBtn: 'Contactez-nous sur WhatsApp',
-    whatsappMessage: 'Bonjour, je souhaite réserver une table ou avoir des informations supplémentaires pour aujourd\'hui. Merci !',
+    reserveTitle: 'Réservez votre Table en Un Clic',
+    reserveSubtitle: 'Bénéficiez instantanément d\'une place réservée et sereine pour travailler ou passer d\'excellents moments.',
+    reserveFormName: 'Votre nom complet',
+    reserveFormPhone: 'Votre numéro de contact',
+    reserveFormGuests: 'Nombre de convives',
+    reserveFormDate: 'Date d\'arrivée',
+    reserveFormTime: 'Heure souhaitée d\'arrivée',
+    reserveFormNotes: 'Demandes particulières (Table de travail avec prise, anniversaire, terrasse...)',
+    reserveFormSubmit: 'Soumettre ma demande rapidement',
+    reserveSuccess: '🎉 Demande de réservation transmise avec brio ! Vous allez également recevoir un texte pré-rempli à nous envoyer sur WhatsApp pour confirmation directe.',
+    reserveSyncing: 'Enregistrement de vos coordonnées sur Google Sheets...',
+    reserveSynced: 'Coordonnées synchronisées avec succès !',
+    reserveSheetHint: 'Votre code de réservation unique a été injecté dans la base informatique de notre gérant.',
     
-    reviewTitle: 'Avis de Nos Clients fidèles',
-    reviewSubtitle: 'Avec plus de 35 commentaires sincères sur Google Maps, découvrez pourquoi nos clients adorent passer du temps chez nous',
-    reviewAddBtn: 'Laisser un avis positif',
-    reviewPlaceholder: 'Votre commentaire de satisfaction pour le Café...',
-    reviewSubmit: 'Soumettre l\'avis',
-
-    adminTitle: 'Panneau Administratif (Gérant)',
-    adminCodeLabel: 'Saisissez le code d\'accès pour gérer les réservations',
-    adminSubmit: 'Se connecter',
-    adminWrongCode: 'Code incorrect !',
-    adminActiveReservations: 'Liste des Réservations Actives du Café',
-    adminSearchPlaceholder: 'Rechercher par nom ou téléphone...',
-    adminTotal: 'Total Réservations',
-    adminExportCSV: 'Exporter en CSV pour Excel',
-    adminMarkChecked: 'Confirmer',
+    marketingTitle: 'Rejoignez Notre Club VIP',
+    marketingSubtitle: 'Recevez instantanément un bon promotionnel exclusif de -15% applicable sur l\'ensemble du menu lors de votre prochaine escale mémorable chez Dream Coffee.',
+    marketingPlaceholder: 'Inscrivez votre e-mail ici',
+    marketingBtn: 'S\'abonner & recevoir mes 15%',
+    marketingSuccess: 'Bienvenue au club ! Présentez cet écran à notre équipe en caisse pour obtenir 15% de bienvenue lors de votre commande.',
+    whatsappBtn: 'WhatsApp Chat Direct',
+    whatsappMessage: 'Bonjour Dream Coffee Benslimane, je souhaite réserver une table ou m\'informer sur les suggestions du jour. Merci !',
+    
+    reviewTitle: 'Avis Élogieux sur Google Maps',
+    reviewSubtitle: 'Reconnus parmi les adresses incontournables à Ben Slimane avec une note globale de 5.0 étoiles sur nos avis réels',
+    reviewAddBtn: 'Déposer mon avis Google',
+    reviewPlaceholder: 'Rédigez d\'avis sincère sur notre café crémeux et notre univers soigné...',
+    reviewSubmit: 'Publier mon commentaire',
+    
+    adminTitle: 'Administration & Hub Gérant',
+    adminCodeLabel: 'Saisissez le code secret pour accéder au registre informatique des tables réservées',
+    adminSubmit: 'Se connecter à l\'espace',
+    adminWrongCode: 'Code d\'authentification incorrect. Réessayez.',
+    adminActiveReservations: 'Toutes les Réservations de Dream Coffee',
+    adminSearchPlaceholder: 'Filtrer par nom, portable ou date...',
+    adminTotal: 'Volume total des tables réservées',
+    adminExportCSV: 'Télécharger le registre en CSV (Excel)',
+    adminMarkChecked: 'Accepter',
     adminMarkCancel: 'Annuler',
-    adminStatusConfirmed: 'Confirmé',
+    adminStatusConfirmed: 'Accepté / Validé',
     adminStatusPending: 'En attente',
-    adminStatusCancelled: 'Annulé',
-    adminNoReservations: 'Aucune réservation trouvée.',
-
-    footerHours: 'Horaires d\'Ouverture',
-    footerEveryday: 'Tous les jours de la semaine',
-    footerAddress: 'Adresse Localisation',
-    footerAddressDetails: 'Quartier Shams Al Madina, Benslimane, Maroc (Région JV89+MG)',
-    footerCall: 'Ligne Téléphonique Directe',
-    footerRights: 'Tous droits réservés au Café Benslimane © 2026. Designé et façonné avec excellence.'
+    adminStatusCancelled: 'Réfuté / Annulé',
+    adminNoReservations: 'Aucune réservation correspondante n\'est disponible.',
+    
+    footerHours: 'Heures d\'Ouverture & Hospitalité',
+    footerEveryday: 'Ouvert tous les jours jusqu\'à 23h30',
+    footerAddress: 'Adresse Géographique Établie',
+    footerAddressDetails: 'Golf chamss lmadina, Ben Slimane 13000, Maroc',
+    footerCall: 'Notre Ligne Directe Unique',
+    footerRights: 'Tous droits réservés à Dream Coffee Benslimane © 2026. Réalisé avec fierté.'
   }
 };

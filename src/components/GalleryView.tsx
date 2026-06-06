@@ -80,43 +80,43 @@ export default function GalleryView({ language }: GalleryViewProps) {
   };
 
   return (
-    <section className="py-24 sm:py-36 bg-[#FAF7F2] text-[#1C1C1C] relative animate-fade-in">
+    <section className="py-24 sm:py-36 bg-[#F5F5DC] text-[#1B4332] relative animate-fade-in">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
         
         {/* Dynamic Header */}
         <div className="text-center max-w-2xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#B89020]/10 border border-[#B89020]/20 text-[#B89020] font-mono text-[10px] sm:text-xs uppercase tracking-[0.2em] font-bold">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1B4332]/10 border border-[#1B4332]/20 text-[#1B4332] font-mono text-[10px] sm:text-xs uppercase tracking-[0.2em] font-bold">
             <Sparkles className="w-3.5 h-3.5 animate-pulse" />
             <span>{isRtl ? 'معرض الأجواء الحقيقي المعقم' : 'The Authentic Showcase'}</span>
           </div>
-          <h1 className="text-4xl sm:text-6xl font-serif font-light tracking-tight leading-tight text-[#1C1C1C]">
+          <h1 className="text-4xl sm:text-6xl font-serif font-light tracking-tight leading-tight text-[#1B4332]">
             {isRtl ? 'الألبوم الرسمي للمقهى' : 'The Visual Immersion'}
           </h1>
-          <p className="text-gray-550 text-xs sm:text-sm font-light font-sans leading-relaxed">
+          <p className="text-[#1B4332]/85 text-xs sm:text-sm font-light font-sans leading-relaxed">
             {isRtl 
               ? 'تصفح كل أركان المقهى الفاخر، صالون الطابق الثاني المريح، المخبزة وصور الوجبات والقهوة المجهزة حياً في بنسليمان شمس المدينة.' 
               : 'Real authentic photography taken directly within our luxurious double-decker space.'}
           </p>
-          <div className="w-12 h-[1px] bg-[#B89020]/35 mx-auto pt-2" />
+          <div className="w-12 h-[1px] bg-[#1B4332]/35 mx-auto pt-2" />
         </div>
 
         {/* 1. INTERACTIVE 360° VIRTUAL INTERIOR TOUR */}
         <div className="space-y-8">
           <div className="text-center max-w-xl mx-auto space-y-2">
-            <span className="text-[#B89020] font-mono text-xs uppercase tracking-[0.25em] block font-bold">
+            <span className="text-[#1B4332] font-mono text-xs uppercase tracking-[0.25em] block font-bold">
               ✦ {isRtl ? 'رحلة استكشافية افتراضية' : 'Spatial Panoramic' } ✦
             </span>
-            <h3 className="text-xl sm:text-2xl font-serif font-medium text-[#1C1C1C]">
+            <h3 className="text-xl sm:text-2xl font-serif font-medium text-[#1B4332]">
               {isRtl ? 'جولة تفاعلية بـ 360° درجة' : 'Interactive 360° Virtual Interior Tour'}
             </h3>
-            <p className="text-xs text-gray-500 font-light font-sans max-w-sm mx-auto">
+            <p className="text-xs text-[#1B4332]/75 font-light font-sans max-w-sm mx-auto">
               {isRtl 
                 ? 'اسحب بواسطة الفأرة أو إصبعك لليمين واليسار لمعاينة تفاصيل الديكور والجلسات الحقيقية.' 
                 : 'Slide the tracking bar or drag the landscape image to look around our majestic space.'}
             </p>
           </div>
 
-          <div className="relative w-full h-[350px] sm:h-[480px] overflow-hidden rounded-3xl border border-[#B89020]/20 bg-neutral-100 select-none shadow-2xl">
+          <div className="relative w-full h-[350px] sm:h-[480px] overflow-hidden rounded-3xl border border-[#1B4332]/20 bg-neutral-100 select-none shadow-2xl">
             <div 
               onMouseDown={handleMouseDown}
               onMouseMove={handleMouseMove}
@@ -142,19 +142,19 @@ export default function GalleryView({ language }: GalleryViewProps) {
                       setActiveHotspot(activeHotspot === spot.id ? null : spot.id);
                     }}
                     className={`relative w-10 h-10 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 ${
-                      activeHotspot === spot.id ? 'bg-[#B89020] text-black shadow-md border border-[#B89020]' : 'bg-black/85 text-[#D4AF37] border border-[#D4AF37]/40 shadow-lg'
+                      activeHotspot === spot.id ? 'bg-[#1B4332] text-white shadow-md border border-[#1B4332]' : 'bg-black/85 text-[#F5F5DC] border border-[#F5F5DC]/40 shadow-lg'
                     }`}
                   >
                     <Eye className="w-5 h-5" />
-                    <span className="absolute inset-0 rounded-full bg-[#B89020]/20 animate-ping -z-10" />
+                    <span className="absolute inset-0 rounded-full bg-[#1B4332]/20 animate-ping -z-10" />
                   </button>
 
                   {activeHotspot === spot.id && (
-                    <div className="absolute bottom-12 left-1/2 -translate-x-1/2 w-64 p-5 bg-white/95 border border-[#B89020]/45 shadow-2xl backdrop-blur-md text-black z-50 text-left rounded-2xl animate-fade-in font-sans">
-                      <h4 className="font-serif text-[#B89020] text-xs sm:text-sm font-semibold mb-1">
+                    <div className="absolute bottom-12 left-1/2 -translate-x-1/2 w-64 p-5 bg-white/95 border border-[#1B4332]/45 shadow-2xl backdrop-blur-md text-[#1B4332] z-50 text-left rounded-2xl animate-fade-in font-sans">
+                      <h4 className="font-serif text-[#1B4332] text-xs sm:text-sm font-bold mb-1">
                         {isRtl ? spot.titleAr : spot.titleFr}
                       </h4>
-                      <p className="text-gray-750 text-xs leading-relaxed font-light text-gray-800">
+                      <p className="text-[#1B4332]/90 text-xs leading-relaxed font-light">
                         {isRtl ? spot.descAr : spot.descFr}
                       </p>
                     </div>
@@ -163,7 +163,7 @@ export default function GalleryView({ language }: GalleryViewProps) {
               ))}
             </div>
 
-            <div className="absolute bottom-6 left-4 right-4 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 z-20 bg-white/95 backdrop-blur-md px-5 py-3 flex items-center gap-3 border border-[#B89020]/20 rounded-full max-w-sm w-full sm:w-[260px] shadow-lg">
+            <div className="absolute bottom-6 left-4 right-4 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 z-20 bg-white/95 backdrop-blur-md px-5 py-3 flex items-center gap-3 border border-[#1B4332]/20 rounded-full max-w-sm w-full sm:w-[260px] shadow-lg">
               <span className="text-[10px] font-mono text-gray-600 font-bold">0°</span>
               <input 
                 type="range" 
@@ -171,7 +171,7 @@ export default function GalleryView({ language }: GalleryViewProps) {
                 max="90" 
                 value={panOffset} 
                 onChange={(e) => setPanOffset(Number(e.target.value))}
-                className="w-full h-1 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#B89020]" 
+                className="w-full h-1 bg-black/10 rounded-lg appearance-none cursor-pointer accent-[#1B4332]" 
               />
               <span className="text-[10px] font-mono text-gray-600 font-bold">360°</span>
             </div>
@@ -182,8 +182,8 @@ export default function GalleryView({ language }: GalleryViewProps) {
         <div className="space-y-12">
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="text-center max-w-xl mx-auto space-y-2">
-              <span className="text-xs font-mono uppercase text-[#B89020] tracking-widest block font-medium">✦ {isRtl ? 'فرز وتصفية التفاصيل' : 'Filter Our Universe'} ✦</span>
-              <h3 className="text-xl sm:text-2xl font-serif font-medium text-[#1C1C1C]">{isRtl ? 'عدسة السحر والواقع من الداخل والخارج' : 'The Curated Collections'}</h3>
+              <span className="text-xs font-mono uppercase text-[#1B4332] tracking-widest block font-medium">✦ {isRtl ? 'فرز وتصفية التفاصيل' : 'Filter Our Universe'} ✦</span>
+              <h3 className="text-xl sm:text-2xl font-serif font-medium text-[#1B4332]">{isRtl ? 'عدسة السحر والواقع من الداخل والخارج' : 'The Curated Collections'}</h3>
             </div>
             
             {/* Elegant category filter pillbar */}
@@ -194,8 +194,8 @@ export default function GalleryView({ language }: GalleryViewProps) {
                   onClick={() => setActiveCategory(cat.id)}
                   className={`px-4 py-2 text-[11px] uppercase tracking-wider font-bold transition-all duration-300 border rounded-full cursor-pointer ${
                     activeCategory === cat.id
-                      ? 'bg-[#1C1C1C] text-white border-[#1C1C1C] shadow-md'
-                      : 'bg-white text-gray-500 border-[#B89020]/20 hover:text-[#B89020] hover:border-[#B89020]'
+                      ? 'bg-[#1B4332] text-white border-[#1B4332] shadow-md'
+                      : 'bg-white text-[#1B4332]/70 border-[#1B4332]/20 hover:text-[#1B4332] hover:border-[#1B4332]'
                   }`}
                 >
                   {isRtl ? cat.labelAr : cat.labelFr}
@@ -218,7 +218,7 @@ export default function GalleryView({ language }: GalleryViewProps) {
                   exit={{ opacity: 0, scale: 0.9 }}
                   transition={{ duration: 0.5 }}
                   onClick={() => setSelectedImage(photo.url)}
-                  className={`${photo.size} relative overflow-hidden group cursor-pointer border border-[#B89020]/15 bg-neutral-100 rounded-3xl shadow-xl hover-premium-lift`}
+                  className={`${photo.size} relative overflow-hidden group cursor-pointer border border-[#1B4332]/15 bg-neutral-100 rounded-3xl shadow-xl hover-premium-lift`}
                 >
                   <img 
                     src={photo.url} 
@@ -230,11 +230,11 @@ export default function GalleryView({ language }: GalleryViewProps) {
 
                   {/* Gradient overlays */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-90 group-hover:opacity-80 transition-opacity" />
-                  <div className="absolute inset-0 bg-[#B89020]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                  <div className="absolute inset-0 bg-[#1B4332]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
                   <div className="absolute bottom-6 left-6 right-6 flex items-end justify-between translate-y-1 group-hover:translate-y-0 transition-all duration-500">
                     <div className="space-y-1.5 text-left">
-                      <span className="text-[9px] font-mono tracking-widest text-[#D4AF37] uppercase block font-black">
+                      <span className="text-[9px] font-mono tracking-widest text-[#F5F5DC] uppercase block font-black">
                         {isRtl ? 'عرض الصورة الحقيقية' : 'Authentic Capture'}
                       </span>
                       <p className="text-xs sm:text-sm font-serif font-medium text-white">{isRtl ? photo.titleAr : photo.titleFr}</p>
@@ -243,7 +243,7 @@ export default function GalleryView({ language }: GalleryViewProps) {
                       </p>
                     </div>
                     
-                    <div className="w-8 h-8 rounded-full border border-white/10 bg-black/50 backdrop-blur-md text-white flex items-center justify-center group-hover:bg-[#B89020] group-hover:text-black group-hover:border-transparent transition-all">
+                    <div className="w-8 h-8 rounded-full border border-white/10 bg-black/50 backdrop-blur-md text-white flex items-center justify-center group-hover:bg-[#1B4332] group-hover:text-white group-hover:border-transparent transition-all">
                       <Maximize2 className="w-3.5 h-3.5" />
                     </div>
                   </div>

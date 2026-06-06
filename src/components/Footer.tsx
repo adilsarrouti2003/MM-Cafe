@@ -10,7 +10,7 @@ export default function Footer({ language }: FooterProps) {
   const d = DICTIONARY[language];
   const isRtl = language === 'ar';
 
-  const mapsUrl = "https://www.google.com/maps/place/Caf%C3%A9+MM/@33.6162892,-7.1309837,15z/data=!4m6!3m5!1s0xda7ab552d1f8d53:0x390f1b4ca2cd932a!8m2!3d33.6162892!4d-7.1309837";
+  const mapsUrl = "https://maps.app.goo.gl/7T4JBx2BPd1h5PDK6";
 
   return (
     <footer id="reviews" className="bg-[#FAF7F2] text-gray-700 border-t border-[#B89020]/15 relative">
@@ -89,7 +89,7 @@ export default function Footer({ language }: FooterProps) {
               {/* Google Maps iFrame */}
               <iframe 
                 title="Café Benslimane Map Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.463375373322!2d-7.133172384794273!3d33.61628918072702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7ab552d1f8d53%3A0x390f1b4ca2cd932a!2sCaf%C3%A9%20MM!5e0!3m2!1sfr!2sma!4v1717511200000!5m2!1sfr!2sma" 
+                src="https://www.google.com/maps?q=33.6177692,-7.1316691&z=17&output=embed" 
                 width="100%" 
                 height="100%"
                 style={{ border: 0 }} 
@@ -102,7 +102,7 @@ export default function Footer({ language }: FooterProps) {
             <div className={`mt-4 grid grid-cols-2 gap-4 ${isRtl ? 'text-right' : 'text-left'}`}>
               <div className="p-3 bg-[#FAF7F2] rounded-xl border border-[#B89020]/15 font-sans">
                 <span className="text-[#B89020] text-xs font-bold block mb-1">{isRtl ? 'الموقع الجغرافي بنسليمان' : 'Coordonnées GPS'}</span>
-                <span className="text-[#1C1C1C] font-mono text-[11px] block font-semibold">33.6162892, -7.1309837</span>
+                <span className="text-[#1C1C1C] font-mono text-[11px] block font-semibold">33.6177692, -7.1316691</span>
                 <a 
                   href={mapsUrl}
                   target="_blank"
@@ -133,8 +133,8 @@ export default function Footer({ language }: FooterProps) {
               <Phone className="w-4 h-4 text-[#B89020]" />
               <span>{d.footerCall}</span>
             </div>
-            <a href="tel:+212661430040" className="text-gray-600 hover:text-[#B89020] transition-colors font-mono text-sm block font-bold">
-              +212 661 43 00 40
+            <a href="tel:+212638309081" className="text-gray-600 hover:text-[#B89020] transition-colors font-mono text-sm block font-bold">
+              +212 638-309081
             </a>
           </div>
 
@@ -156,7 +156,7 @@ export default function Footer({ language }: FooterProps) {
               <span>{d.footerHours}</span>
             </div>
             <span className="text-gray-600 text-center md:text-inherit">
-              {d.footerEveryday} : <strong className="text-black font-mono block sm:inline-block font-bold">{isRtl ? 'من 8 صباحاً حتى 23:00' : '08:00 - 23:00'}</strong>
+              {d.footerEveryday} : <strong className="text-black font-mono block sm:inline-block font-bold">{isRtl ? 'مفتوح حتى الساعة 23:30' : 'Daily until 23:30'}</strong>
             </span>
           </div>
 
@@ -166,7 +166,7 @@ export default function Footer({ language }: FooterProps) {
         <div className="mt-16 pt-8 border-t border-[#B89020]/15 flex flex-col sm:flex-row items-center justify-between text-[11px] text-gray-550 gap-4 font-mono font-light">
           <span>{d.footerRights}</span>
           <div className="flex gap-4">
-            <span className="text-gray-400">ID: JV89+MG Benslimane</span>
+            <span className="text-gray-400">ID: JV99+48 Benslimane</span>
             <span>•</span>
             <span className="text-[#B89020] font-bold">{isRtl ? 'بريميوم SSL آمن' : 'Secured SSL'}</span>
           </div>

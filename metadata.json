@@ -1,6 +1,8 @@
 {
-  "name": "Café MM - Benslimane",
-  "description": "الموقع الرسمي الراقي لـ Café MM بنسليمان. الموقع يعرض قائمة المأكولات، الحجوزات السريعة، وأحدث العروض مع واجهة فرنسية وعربية.",
+  "name": "Dream Coffee - Benslimane",
+  "description": "الموقع الرسمي الرفيع لمقهى دريم كوفي (Dream Coffee) في بلاتوه غولف شمس المدينة ببنسليمان. تصفح قائمتنا، احجز طاولتك مجاناً بضغطة زر مع تأكيد واتساب مباشر.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

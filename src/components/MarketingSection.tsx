@@ -23,7 +23,7 @@ export default function MarketingSection({ language }: MarketingSectionProps) {
 
   const handleWhatsAppChat = () => {
     const encodedMsg = encodeURIComponent(d.whatsappMessage);
-    const whatsappUrl = `https://wa.me/212661430040?text=${encodedMsg}`;
+    const whatsappUrl = `https://wa.me/212638309081?text=${encodedMsg}`;
     window.open(whatsappUrl, '_blank');
   };
 

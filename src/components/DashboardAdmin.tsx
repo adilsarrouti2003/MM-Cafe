@@ -31,10 +31,10 @@ export default function DashboardAdmin({ language, isOpen, onClose, reservations
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     const cleanUser = username.trim();
-    // Accept either 'admin' or 'MM12344321MM' as the username, and ONLY 'MM12344321MM' as password
+    // Accept either 'admin' or 'coffee12344321dream' as the username, and ONLY 'coffee12344321dream' as password
     if (
-      (cleanUser.toLowerCase() === 'admin' || cleanUser === 'MM12344321MM') && 
-      password === 'MM12344321MM'
+      (cleanUser.toLowerCase() === 'admin' || cleanUser === 'coffee12344321dream') && 
+      password === 'coffee12344321dream'
     ) {
       setIsAuthenticated(true);
       setErrorMsg('');

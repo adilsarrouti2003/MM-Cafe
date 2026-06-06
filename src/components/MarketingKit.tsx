@@ -185,20 +185,20 @@ export default function MarketingKit({ language }: MarketingKitProps) {
     {
       titleAr: "📢 عرض اليوم الثاني بنصف الثمن",
       titleFr: "📢 Offre BOGO 2ème à -50%",
-      textAr: `🌟 عرض خاص وحصري من مقهانا بنسليمان! ☕🍳\n\nاشري قهوتك المفضلة أو الفطور البلدي الممتاز وخذ الثاني بنصف الثمن! 😍\nنشط عرضك الآن بزيارتنا في شمس المدينة.\n\n📞 للاستفسار والحجز السريع: +212661430040\n📍 الموقع: حي شمس المدينة، بنسليمان`,
-      textFr: `🌟 Offre Exclusive chez notre Café à Benslimane ! ☕🍳\n\nCommandez votre boisson préférée ou notre authentique petit-déjeuner Beldi, et obtenez le deuxième à MOITIÉ PRIX ! 😍\nProfitez-en en nous rendant visite dès aujourd'hui.\n\n📞 Infos & Réservations : +212661430040\n📍 Adresse : Quartier Shams Al Madina, Benslimane`
+      textAr: `🌟 عرض خاص وحصري من مقهى دريم كوفي بنسليمان! ☕🍳\n\nاشري قهوتك المفضلة أو الفطور البلدي الممتاز وخذ الثاني بنصف الثمن! 😍\nنشط عرضك الآن بزيارتنا في غولف شمس المدينة.\n\n📞 للاستفسار والحجز السريع: +212638309081\n📍 الموقع: غولف شمس المدينة، بنسليمان`,
+      textFr: `🌟 Offre Exclusive chez Dream Coffee à Benslimane ! ☕🍳\n\nCommandez votre boisson préférée ou notre authentique petit-déjeuner Beldi, et obtenez le deuxième à MOITIÉ PRIX ! 😍\nProfitez-en en nous rendant visite dès aujourd'hui.\n\n📞 Infos & Réservations : +212638309081\n📍 Adresse : Golf chamss lmadina, Ben Slimane 13000`
     },
     {
       titleAr: "📚 تخفيض الطلبة والتركيز -20%",
       titleFr: "📚 Spécial Étudiants -20% Focus",
-      textAr: `🎓 محتاج بلاصة هادئة وبدون إزعاج لمراجعة دروسك؟ 🧠📖\n\nمقهانا الراقي في بنسليمان كيرحب بالطلبة! استمتع بوي-فاي مجاني وسريع، هدوء مطلق، وخصم 20% فوري على جميع مشروباتنا وحلوياتنا الرائعة! 🎉\n\n📍 زورنا اليوم: شمس المدينة، بنسليمان`,
-      textFr: `🎓 Besoin d'un espace calme pour réviser ou travailler sereinement ? 🧠📖\n\nNotre Café à Benslimane vous chouchoute ! Profitez d'un WIFI haut débit gratuit, d'une ambiance zen et d'une RÉDUCTION DE 20% immédiate sur toutes les boissons et douceurs sur présentation de votre carte étudiant ! 🎉\n\n📍 Adresse : Shams Al Madina, Benslimane`
+      textAr: `🎓 محتاج بلاصة هادئة وبدون إزعاج لمراجعة دروسك؟ 🧠📖\n\nدريم كوفي في بنسليمان كيرحب بالطلبة! استمتع بوي-فاي مجاني وسريع، هدوء مطلق، وخصم 20% فوري على جميع مشروباتنا وحلوياتنا الرائعة! 🎉\n\n📍 زورنا اليوم: غولف شمس المدينة، بنسليمان`,
+      textFr: `🎓 Besoin d'un espace calme pour réviser ou travailler sereinement ? 🧠📖\n\nDream Coffee à Benslimane vous chouchoute ! Profitez d'un WIFI haut débit gratuit, d'une ambiance zen et d'une RÉDUCTION DE 20% immédiate sur toutes les boissons et douceurs sur présentation de votre carte étudiant ! 🎉\n\n📍 Adresse : Golf chamss lmadina, Ben Slimane 13000`
     },
     {
       titleAr: "⚽ استمتع بمشاهدة المبارات بالجو المثالي",
       titleFr: "⚽ Match Live dans une Ambiance de Feu",
-      textAr: `🏆 كلاسيكو حماسي ومباريات قوية مباشرة بأحدث الشاشات والجو الحماسي الأنيق! 📺🔥\n\nاحجز طاولتك مع صحابك في مقهانا الفاخر بنسليمان وعيش المتعة الحقيقية مع أحسن خدمة ومشروبات باردة دافئة على ذوقك.\n\n📞 لحجز طاولتك مجاناً فوراً قبل النفاذ: +212661430040`,
-      textFr: `🏆 Ne ratez plus aucun grand match ! Vivez l'ambiance des grands soirs sur nos écrans géant avec vos amis au Café Benslimane ! 📺🔥\n\nService impeccable, canapés confortables et boissons fraîches/chaudes d'exception.\n\n📞 Réservez gratuitement votre table avant le coup d'envoi : +212661430040`
+      textAr: `🏆 كلاسيكو حماسي ومباريات قوية مباشرة بأحدث الشاشات والجو الحماسي الأنيق! 📺🔥\n\nاحجز طاولتك مع صحابك في مقهى دريم كوفي وعيش المتعة الحقيقية مع أحسن خدمة ومشروبات باردة دافئة على ذوقك.\n\n📞 لحجز طاولتك مجاناً فوراً قبل النفاذ: +212638309081`,
+      textFr: `🏆 Ne ratez plus aucun grand match ! Vivez l'ambiance des grands soirs sur nos écrans géant avec vos amis à Dream Coffee ! 📺🔥\n\nService impeccable, canapés confortables et boissons fraîches/chaudes d'exception.\n\n📞 Réservez gratuitement votre table avant le coup d'envoi : +212638309081`
     }
   ];
 

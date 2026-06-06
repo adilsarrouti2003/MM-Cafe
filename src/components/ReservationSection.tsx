@@ -161,7 +161,7 @@ export default function ReservationSection({ language, onNewReservation, scriptU
       `📝 *ملاحظات خاصة:* ${formData.notes || 'لا توجد ملاحظات'}\n\n` +
       `يرجى تأكيد الحجز وشكراً لكم! ✨`;
 
-    const waLink = `https://wa.me/212661430040?text=${encodeURIComponent(waMessage)}`;
+    const waLink = `https://wa.me/212638309081?text=${encodeURIComponent(waMessage)}`;
     
     setLastReservation({
       name: formData.name,
@@ -229,7 +229,7 @@ export default function ReservationSection({ language, onNewReservation, scriptU
           </div>
           
           <a
-            href={`https://wa.me/212661430040?text=${encodeURIComponent(d.whatsappMessage)}`}
+            href={`https://wa.me/212638309081?text=${encodeURIComponent(d.whatsappMessage)}`}
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-1.5 px-4 py-2 bg-[#25D366] hover:bg-[#20ba5a] text-white border border-[#25D366] text-xs font-mono uppercase tracking-widest transition-all shrink-0 cursor-pointer rounded-none"
