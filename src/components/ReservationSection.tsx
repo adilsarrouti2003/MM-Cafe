@@ -25,6 +25,7 @@ export default function ReservationSection({ language, onNewReservation, scriptU
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState(false);
   const [googleSyncStatus, setGoogleSyncStatus] = useState<'idle' | 'syncing' | 'synced' | 'failed'>('idle');
+  const [lastReservation, setLastReservation] = useState<{ name: string; link: string } | null>(null);
   
   const d = DICTIONARY[language];
   const isRtl = language === 'ar';
@@ -149,6 +150,31 @@ export default function ReservationSection({ language, onNewReservation, scriptU
       }, 1500);
     }
 
+    // Prepare WhatsApp Message in Arabic
+    const waMessage = `🌟 *طلب حجز طاولة جديد* 🌟\n\n` +
+      `📍 *الاسم الكامل:* ${formData.name}\n` +
+      `📞 *رقم الهاتف:* ${formData.phone}\n` +
+      `📅 *التاريخ:* ${formData.date}\n` +
+      `⏰ *الوقت:* ${formData.time}\n` +
+      `👥 *عدد الأفراد:* ${formData.guests}\n` +
+      `🛋️ *الفضاء المطلوب:* ${areaLabel}\n` +
+      `📝 *ملاحظات خاصة:* ${formData.notes || 'لا توجد ملاحظات'}\n\n` +
+      `يرجى تأكيد الحجز وشكراً لكم! ✨`;
+
+    const waLink = `https://wa.me/212661430040?text=${encodeURIComponent(waMessage)}`;
+    
+    setLastReservation({
+      name: formData.name,
+      link: waLink
+    });
+
+    // Attempt to open WhatsApp directly
+    try {
+      window.open(waLink, '_blank');
+    } catch (e) {
+      console.error('Popup blocked:', e);
+    }
+
     setSubmitting(false);
     setSuccess(true);
     setFormData({
@@ -164,7 +190,7 @@ export default function ReservationSection({ language, onNewReservation, scriptU
     setTimeout(() => {
       setSuccess(false);
       setGoogleSyncStatus('idle');
-    }, 10000);
+    }, 45000); // Give the user 45s to see the WhatsApp links before clearing success view automatically
   };
 
   return (
@@ -231,6 +257,25 @@ export default function ReservationSection({ language, onNewReservation, scriptU
                 {d.reserveSuccess}
               </p>
             </div>
+
+            {lastReservation && (
+              <div className="max-w-md mx-auto p-4 bg-[#f0fbf4] border border-[#25D366]/40 rounded-none space-y-3 shadow-sm">
+                <p className="text-[#207a3f] text-xs font-semibold">
+                  {isRtl 
+                    ? 'يرجى الضغط على الزر أدناه لإرسال تفاصيل حجزك عبر الواتساب وتأكيده مباشرة معنا:' 
+                    : 'Please click the button below to send your booking coordinates on WhatsApp for immediate confirmation:'}
+                </p>
+                <a
+                  href={lastReservation.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-4 bg-[#25D366] hover:bg-[#20ba5a] text-white font-semibold text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 w-full shadow-md"
+                >
+                  <MessageCircle className="w-4.5 h-4.5 fill-current" />
+                  <span>{isRtl ? 'إرسال الحجز للواتساب (تأكيد فوري) ✦' : 'Send to WhatsApp (Instant Confirm) ✦'}</span>
+                </a>
+              </div>
+            )}
 
             <div className="p-4 bg-white border border-black/5 text-xs text-left font-mono space-y-2.5">
               <div className="flex justify-between items-center text-gray-500">
